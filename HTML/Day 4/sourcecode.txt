@@ -1,0 +1,34 @@
+How to get Source Code of any website ?
+
+comments
+A Website is defined as a collection of web pages. A website can be designed using HTML, CSS, Bootstrap, etc. HTML language decides what will appear on the webpage, and CSS language depicts how it will appear. Suppose we see a website eg, geeksforgeeks.org, and we want its source code, then there are two ways to get it:
+
+Method 1: Using Inspect Element 
+Below is the step-by-step implementation.
+
+Step 1: Visit your desired website eg- geeksforgeeks.org
+
+
+Step 2: Right click on website and click on "Inspect".
+
+
+Step 3: You will get code on right-hand side.
+
+
+Short Cut Key: 
+
+(Ctrl + Shift + I )
+Method 2: Using Page Source
+Step 1: Visit your desired website eg geeksforgeeks.org.
+
+
+Step 2: Right click on website and click on "View Page Source".
+
+
+Step 3: You will get source code as following. 
+
+
+Method 2: Shortcut Key
+The Easiest Method to get source code of any website is using
+
+CTRL + U

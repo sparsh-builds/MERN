@@ -1,0 +1,73 @@
+CSS functions are powerful tools that help you style websites more efficiently. They allow you to dynamically adjust values like colors, sizes, and positions, making your code cleaner and more maintainable.
+
+Here are 10 essential CSS functions every front-end developer should know:
+
+1. url() Function
+The url() function is used to link external resources like images or fonts in your CSS. It’s commonly used for background images, list styles, and more.
+
+background: url("photo.jpg")
+
+2. calc() Function
+The calc() function lets you perform calculations directly in your CSS. It’s useful for dynamically adjusting sizes, margins, or padding.
+
+width: calc(100%-60px)
+
+3. var() Function
+The var() function is used to insert the value of a CSS variable. It’s great for reusing values and maintaining consistency across your styles.
+
+--white: #fff
+h2 { color: var(--white); }
+
+4. rgb() and rgba() Functions
+These functions define colors using red, green, and blue values. The rgba() function adds an alpha channel for transparency.
+
+color: rgb(0, 0, 0)
+color: rgba(0, 0, 0, 1)
+
+5. hsl() Function
+The hsl() function defines colors using hue, saturation, and lightness. It’s a more intuitive way to work with colors.
+
+color: hsl(0, 0, 0)
+
+6. blur() Function
+The blur() function applies a blur effect to elements. It’s often used with the filter property.
+
+.body{
+    filter : blur(100px);
+}
+
+7. brightness() Function
+The brightness() function adjusts the brightness of an element. It’s also used with the filter property.
+
+.h2{
+    filter: brightness(50%);
+}
+
+8. opacity() Function
+The opacity() function sets the transparency level of an element.
+
+img{
+    filter : opacity(50%);
+}
+
+9. :not() Function
+The :not() pseudo-class applies styles to elements that do not match a specific selector.
+
+img:not(.no-p){
+    padding: 0;
+}
+
+10. :nth-child() and :nth-last-child() Selectors
+:nth-child() and :nth-last-child() selectors target specific child elements within a group.
+
+li:nth-child(2), 
+li:nth-last-child(2){
+    color: yellow;
+}
+
+Best Practices for Using CSS Functions
+Keep It Simple and Readable: Avoid overcomplicating your CSS with excessive or nested functions. Write clear and concise code to ensure maintainability.
+Test Cross-Browser Compatibility: Some CSS functions may not work consistently across all browsers. Always test your code to ensure it works as expected.
+Use Functions for Dynamic Styling: Leverage CSS functions to create responsive, flexible, and dynamic designs, but avoid using them where static values would suffice.
+
+

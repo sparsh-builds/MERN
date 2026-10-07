@@ -1,0 +1,89 @@
+CSS variables (custom properties) are reusable values defined with two dashes (--) that make your CSS code efficient and easier to maintain.
+
+Store values like colors, sizes, or fonts in one place for centralized updates.
+Use var() to apply these variables anywhere in your CSS.
+Improve code readability and consistency across your styles.
+Syntax:
+
+var( --custom-name, value );
+--custom-name: (Required) The name of the custom property, starting with two dashes (--).
+value: (Optional) A value used if the custom property is not defined or is invalid.
+
+
+
+
+<html>
+<head>
+    <style>
+        :root {
+            --main-bg-color: lightblue;
+            --main-text-color: darkblue;
+        }
+        body {
+            background-color: var(--main-bg-color);
+            color: var(--main-text-color);
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p>This is a sample paragraph demonstrating CSS variables.</p>
+
+
+
+Example of CSS Variable
+Here are some examples of CSS Variable:
+
+1. Themed Button Using CSS Variables
+
+
+<html>
+<head>
+    <style>
+        :root {
+            --button-bg: #4CAF50;
+            --button-text: white;
+            --button-padding: 10px 20px;
+        }
+        .btn {
+            background-color: var(--button-bg);
+            color: var(--button-text);
+            padding: var(--button-padding);
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn">Click Me</button>
+</body>
+</html>
+
+:root defines --btn-bg for button background and --btn-text for button text color.
+These variables are applied to style a button, making theme updates easy by changing values in :root.
+
+2. Dynamic Spacing Using CSS Variables
+
+<html>
+<head>
+    <style>
+        :root {
+            --spacing: 20px;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: lightcoral;
+            margin: var(--spacing);
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+</body>
+</html>
+

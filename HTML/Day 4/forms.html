@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        form {
+            width: 400px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        fieldset {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        textarea,
+        input[type="date"] {
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .gender-group {
+            margin-bottom: 10px;
+        }
+        .gender-group label {
+            display: inline-block;
+            margin-left: 10px;
+        }
+        input[type="radio"] {
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+<form>
+<fieldset>
+<legend>User Personal Information</legend>
+
+<label for="Name">Full Name:</label>
+<input type="text" required>
+
+<label>Email:</label>
+<input type="email" required>
+
+<label>Password:</label>
+<input type="password" required>
+
+<label>Confirm Password:</label>
+<input type="password" required>
+
+<label>Gender:</label>
+<input type="radio" name="gender"> Male
+<input type="radio" name="gender"> Female
+<input type="radio" name="gender"> Others
+<br>
+<br>
+<label>Date of Birth:</label>
+<input type="date" required>
+
+<label>Address:</label>
+<textarea required></textarea>
+
+<label>Course:</label>
+<input type="text" list="courseList" required>
+<datalist id="courseList">
+    <option value="B.Tech">
+    <option value="BCA">
+</datalist>
+
+<label>Car:</label>
+<select>
+    <optgroup label="Japanese Cars">
+        <option>Toyota</option>
+        <option>Suzuki</option>
+    </optgroup>
+    <option>Hyundai</option>
+</select>
+
+<input type="submit" value="Submit">
+<span>
+    <label for="image">upload image</label>
+    <input type="file">
+
+    <label for="reset">reset</label>
+    <input type="reset" name="" id="">
+</span>
+
+</fieldset>
+</form>
+</body>
+</html>

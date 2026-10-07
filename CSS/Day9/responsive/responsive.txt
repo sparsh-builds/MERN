@@ -1,0 +1,16 @@
+Flexbox, or the Flexible Box Layout, 
+is a CSS layout model designed to create complex layouts easily. 
+To use Flexbox, we first define a container as a flex container by setting display: flex. 
+By default, Flexbox arranges items in a row. We can change this direction with the flex-direction property. 
+The justify-content property aligns flex items along the main axis. The align-items property aligns flex items along the cross-axis.
+
+
+
+By default, flex items will try to fit into one line. 
+The flex-basis property specifies the initial size of a flex item before it is adjusted by the flex-grow or
+ flex-shrink properties. The flex-grow property defines how much an item should grow relative to other items
+  if there is extra space. Responsive design often requires different alignments on various screen sizes. 
+While Flexbox is great for linear layouts, the CSS Grid Layout is better for two-dimensional layouts.
+
+
+

@@ -1,0 +1,62 @@
+HTML5 MathML Introduction
+
+comments
+Mathematical Markup Language (MathML) is an XML-based markup language designed to represent mathematical expressions and formulas on web pages.
+
+It is an integral part of HTML5, allowing browsers to display mathematical content without the need for additional plugins or images.
+
+Importance of MathML in HTML5
+With the inclusion of MathML in HTML5, web developers and educators can seamlessly integrate mathematical notation into web pages, improving accessibility and readability. MathML provides a structured and semantic way to present mathematical content, ensuring it can be rendered properly across different devices and assistive technologies.
+
+
+MathML Tags
+MathML (Mathematical Markup Language) provides a variety of tags to represent mathematical notations. Below is a list of commonly used MathML tags:
+
+Tag
+
+Description
+
+MathML <math> tag	MathML element you want to use they should wrapped inside of the <math> tag.
+MathML <maction> tag	This tag is used to show the bind action of any expression.
+MathML <menclose> Tag	This tag is used to renders the contents which is inside of an enclosing notation specified by the notation attribute.
+MathML <merror> Tag	This tag is used to wrap the expression in a box, makes that expression eye-catching.
+MathML <mfenched> tag	This tag is used to add custom open and closing parentheses.
+MathML <mfrac> tag	This tag is use to add fraction symbol between two digits or equations.
+MathML <mglyph> Tag	This tag is used only for those characters or symbols that are not available on Unicode characters.
+MathML <mi> Tag	This tag is used as an identifier such as any kind of symbol or function. You can put any statement inside this tag.
+MathML <mlabeledtr> tag	This tag is used to represent a label in a row, either on the left or on the right side inside of the <mtable> element.
+MathML <mmultiscripts> Tag	This tag is used to create multi-dimensional matrices. The degree depends on the conditionality of a representative array.
+MathML <mn> Tag	THis tag is used to display a numeric character which is normally a sequence of digits with a possible separator.
+MathML <mo> Tag	This tag is used print operator between elements. Any kind of mathematical operator can be used by this tag.
+MathML <mover> Tag	This tag is used to attach an accent or a limit over an expression.
+MathML <mpadded> Tag	This tag is used to add extra padding and to set the general adjustment of position and size of enclosed contents.
+MathML <mphantom> Tag	It is used to rendered invisibly but the dimensional are still kept.
+MathML <mroot> Tag	This tag is use to display the power of the root like root squire.
+MathML <mrow> Tag	This tag is used to create a row that contains some mathematical expression or any random text.
+MathML <ms> Tag	This tag is used to represent string that will represent the mathematical expression by programming languages and computer algebra systems.
+MathML <mspace> Tag	This tag is used to print blank space. The size of the blank space has to be mentioned in the attributes.
+MathML <msqrt> Tag	It is use to display the root squire of the element content.
+MathML <style> Tag	It is an inbuilt tag in HTML5. This tag is used to change the styles of the children elements.
+MathML <msub> Tag	It is used to print the base power on any expression.
+MathML <msubsup> Tag	It is used to print base power and power on any expression.
+MathML <msup> Tag	It is used to print power on any expression.
+MathML <mtable> Tag	This tag is similar to the normal HTML <table> tag.
+MathML <mtd> Tag	This tag is used to create table data of a table or the matrices in HTML5
+MathML <mtext> Tag	This tag is used to print any text before after any expression.
+MathML <mtr> Tag	This tag is used to create row of a table or the matrices in HTML5.
+MathML <mth> Tag	This tag is used to create header of a table or the matrices in HTML5.
+MathML <munder> Tag	This tag is used attach any accent or limit under the expression.
+MathML <munderover> Tag	This tag is used attach any accent or limit under the expression plus over the expression.
+MathML <semantics> Tag	This tag is used to markup the mathematics there are two possible ways to markup mathematics
+Limitations:
+MathML is not designed to perform calculations or solve equations; it solely serves to display mathematical expressions.
+It is a markup language for representing mathematical notation, not a programming language.
+Capabilities:
+MathML can represent matrices, allowing for the structured display of rows and columns.
+It can depict partial differential equations, facilitating the presentation of complex mathematical relationships.
+MathML is capable of illustrating chemical reaction equations, enabling the clear representation of reactants and products.
+
+Best Practices for Using MathML in HTML5
+Use the <math> Tag: Always encapsulate MathML content within the <math> element to ensure proper rendering and semantic clarity.
+Validate MathML Code: Regularly validate your MathML markup using tools like the W3C MathML Validator to maintain correctness and compatibility.
+

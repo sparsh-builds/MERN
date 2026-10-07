@@ -1,0 +1,90 @@
+Top/Right/Bottom/Left	These classes are used to control the alignment of a positioned element.
+Visibility	It is used to specify whether an element is visible or not.
+Z-index	It describes the z-index along the three-dimensional plane.
+
+IIntroduction to Tailwind CSS
+
+comments
+Tailwind CSS is a modern, utility-first framework that lets developers style websites directly in HTML using utility classes. It speeds up UI development by reducing the need for writing custom CSS.
+
+Uses small, reusable utility classes for styling.
+Uses Tailwind utility classes directly in HTML for styling.
+Creates a clean profile card without custom CSS.
+frame.webpframe.webp
+Below is a basic example that imports Tailwind CSS via CDN and applies margin to the body. The heading is styled with Tailwind's utility classes.
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+​
+<head>
+    <meta charset="UTF-8">
+​
+    <!-- Tailwind CSS CDN link -->
+    <link href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+​
+  <body class="m-4">
+    <h1 class="text-green-500 text-4xl font-bold">
+        Geeksforgeeks
+    </h1>
+​
+    <p><strong>Tailwind CSS Tutorial</strong></p>
+​
+    <p>
+        You can use Tailwind CSS as a replacement 
+        of CSS, this is a framework that increase 
+        your pace to design any website.
+    </p>
+  </body>
+​
+</html>
+Features of Tailwind CSS
+Features that make Tailwind CSS a powerful and flexible framework for modern web development.
+
+features_of_tailwind_css
+Utility-first CSS framework: Uses small, reusable utility classes with clear documentation and practical examples for easy learning.
+Fast UI development: Speeds up design and prototyping by removing the need for custom CSS and integrates seamlessly with React, Vue, and Next.js.
+Highly customizable: Enables deep customization through configuration files to match any design system.
+Responsive by default: Follows a mobile-first approach with responsive utility prefixes for all screen sizes.
+Built-in dark mode: Provides simple dark mode support using built-in variants.
+Consistent design system: Maintains uniform spacing, colors, and typography, improving scalability and maintainability.
+Tailwind CSS vs Traditional CSS
+The table below highlights the key differences between traditional CSS and Tailwind CSS in terms of development approach and scalability.
+
+Traditional CSS
+
+Tailwind CSS
+
+Styles are written in separate CSS files, requiring frequent switching between HTML and CSS
+
+Styles are applied directly in HTML using utility classes, reducing context switching
+
+Developers must create and manage custom class names for every component
+
+Predefined utility classes remove the need for naming custom CSS classes
+
+UI development is slower due to repetitive CSS writing
+
+Rapid UI development using ready-made utility classes
+
+Maintaining consistency becomes difficult as the project grows
+
+Consistent and reusable design system that scales easily
+
+Advantages of Tailwind CSS
+No complex class names: Eliminates the need to invent and manage custom CSS class or ID naming conventions.
+Minimal CSS output: Reduces large custom stylesheets, keeping the codebase lightweight and maintainable.
+Easy customization: Enables flexible design changes and reusable components without extra CSS.
+Built-in responsiveness: Makes creating mobile-friendly layouts simple using responsive utility classes.
+Scoped styling: Applies styles locally to elements, avoiding unintended global CSS side effects.
+Limitations of Tailwind CSS
+Long class lists: HTML markup can become lengthy due to multiple utility classes.
+Learning curve: Requires time to understand utility naming conventions.
+Not beginner-friendly initially: Can feel overwhelming for developers new to CSS frameworks.
+Build setup needed: Production usage requires configuration and build tools.
+Less semantic HTML: Styling-heavy classes may reduce visual clarity of markup.
+

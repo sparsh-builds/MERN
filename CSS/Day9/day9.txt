@@ -1,0 +1,38 @@
+Selector: Targets the HTML element "h1" to apply styles.
+Declaration Block: Enclosed in curly braces { }, contains one or more declarations.
+Property: Specifies the style attribute, here "color" for text color.
+Value: Defines the property's setting, here "blue" for the text hue.
+Overall Structure: Forms a complete CSS rule: h1 { color: blue; }, styling h1 headings blue.
+
+
+Color Formats in CSS
+Color Format
+
+Description
+
+Color Names
+
+Use predefined color names (e.g., red, blue, green) for simplicity.
+
+Hexadecimal (Hex) Codes
+
+Define colors using six-digit hex codes (e.g., #FF5733).
+
+RGB (Red, Green, Blue)
+
+Define colors using RGB values (e.g., rgb(255, 0, 0)).
+
+RGBA (Red, Green, Blue, Alpha)
+
+Extend RGB by adding an alpha (transparency) value (e.g., rgba(255, 0, 0, 0.5)).
+
+HSL (Hue, Saturation, Lightness)
+
+Define colors using HSL values (e.g., hsl(120, 100%, 50%)).
+
+HSLA (Hue, Saturation, Lightness, Alpha)
+
+Extend HSL by adding an alpha value for transparency (e.g., hsla(120, 100%, 50%, 0.5)).
+
+
+

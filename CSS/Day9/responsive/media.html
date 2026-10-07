@@ -1,0 +1,57 @@
+<!--Media queries are CSS techniques used to apply styles based on the device's characteristics,
+ such as screen width, height, and resolution. 
+ They are essential for creating responsive designs that adapt to different devices. 
+ Media queries can be used to change Flexbox properties based on screen size. For example, 
+ we might switch from a horizontal layout to a vertical layout on smaller screens.-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Media Queries with Flexbox</title>
+    <style>
+        /* Media Queries with Flexbox */
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .flex-item {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            margin: 10px;
+            flex: 1 1 300px;
+            /* Default layout */
+            box-sizing: border-box;
+        }
+
+        /* Media Query for smaller screens */
+        @media (max-width: 600px) {
+            .flex-item {
+                flex: 1 1 100%;
+                /* Stacks items on top of each other */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Flexbox Layout with Media Queries -->
+    <div class="flex-container">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+        <div class="flex-item">Item 4</div>
+    </div>
+
+</body>
+
+</html>
+

@@ -1,0 +1,284 @@
+Understanding CMS: WordPress vs. Payload
+
+comments
+A CMS (Content Management System) helps companies easily create, edit, manage, and publish content (like websites, blogs, or landing pages) without needing to code every time.
+
+Why companies use CMS:
+
+Easy Website Updates: Anyone can update text, images, or links without needing a developer.
+Saves Time and Cost: No need to build everything from scratch using HTML or code.
+Multiple Users: Teams (marketing, design, editors) can work together on content.
+SEO and Plugins: Helps with Google ranking and adding features (e.g., contact forms, analytics).
+WordPress: Most used CMS
+WordPress is the most widely used CMS in the world, powering over 43% of websites globally. Originally launched in 2003 as a blogging platform, it has since evolved into a versatile tool for building websites, blogs, business pages, and even e-commerce stores. Popular WordPress Plugins are:
+
+Yoast SEO: This plugin is a must-have for anyone looking to improve their website’s SEO performance.
+WooCommerce: Perfect for transforming a WordPress site into a fully functional online store.
+Elementor: A powerful drag-and-drop page builder that makes it easy to design pages without any coding.
+WP Rocket: A performance optimization plugin that helps improve website speed by enabling caching and other techniques for faster loading times.
+wordpress_plugins
+WordPress Plugins
+
+
+Note: WordPress is becoming outdated for many companies because it's built on PHP, which can be slower and harder to scale for modern applications. Instead, companies are now moving to modern CMS platforms like Payload CMS, which use JavaScript/TypeScript (Node.js). These are faster, more flexible, and better suited for building advanced, scalable websites and applications.
+
+When to use Payload CMS?
+With Payload, developers have full control over the website’s frontend and can use their preferred technologies for the display of content. It’s designed to integrate seamlessly with modern frameworks like Next.js, allowing developers to create fast, scalable, and dynamic websites.
+
+If data ownership and privacy are important to you, and you don't want to allow another proprietary SaaS vendor to host and own your data.
+
+Popular Payload Plugins
+payload-visual-editor: This plugin adds a visual editor within the admin UI, offering an easy-to-use interface for content creators to manage and modify content without diving into code.
+payload-ai: This plugin integrates artificial intelligence for content creation and management, helping users streamline their content workflow.
+payload-auth-plugin: Designed to simplify authentication, this plugin allows easy integration of OAuth and OpenID Connect providers for secure user access.
+payload-plugin-author-fields: Automatically adds createdBy and updatedBy fields to collections and globals, ensuring that all content is tracked and attributed correctly.
+
+
+Companies That Prefer Payload Over WordPress
+
+Microsoft: Microsoft utilized Payload for creating a dynamic campaign hub, providing flexibility and customization for their marketing efforts.
+Blue Origin: Payload was used to send student postcards to space, showcasing how the CMS can be leveraged for creative and unique projects.
+Sonos: The audio technology company transformed its campaign hub using Payload, ensuring that it met the high standards required for user experience and functionality.
+ASICS: ASICS used Payload to create a streamlined ambassador platform, providing the flexibility needed to handle global campaigns.
+Hello Bello: This e-commerce brand used Payload to build a highly functional and scalable online store, showcasing the platform’s potential for retail and commercial websites.
+companies_using_payload
+Companies using Payload
+
+
+Web Hosting: What Is It?
+
+comments
+Web hosting is what makes your website visible on the internet. It stores your website’s files on special computers called servers and delivers them to visitors when they type in your domain name.
+
+Web hosting allows websites to be online 24/7 by storing files (images, text, code) on servers.
+When someone enters your domain (like⁣ - ⁣www.geeksforgeeks.org), the server sends the website files to their browser.
+web_hosting
+Web Hosting
+To ensure your site performs well and remains secure, it's important to choose a reliable hosting provider by considering key factors like cost, server uptime, customer support, scalability, and security features.
+
+What Makes Web Hosting Servers Unique?
+Web Hosting servers are kind of like regular home computers but they have a few important extra features/requirements to help them do their job better.
+
+The most important thing is stability, a server needs to stay online all the time without crashing. That’s why many web servers use the Linux operating system. Linux is more stable and reliable than Windows for this kind of work.
+
+For example: Google uses over 15,000 Linux servers to keep its search engine running smoothly.
+
+Hosting a Website: Complete Setup and Maintenance Flow
+When setting up for the web hosting, it is required first to pick a unique website name and purchase it that will act as an address to your website. Once you have done this you need to choose the service provider that is needed for your site which will allocate the space on their servers. After configuring the server, you upload the website's files and set up any necessary databases. 
+
+To make your site accessible for users, you have to configure the Domain Name System (DNS) to point your domain to your hosting server's IP address. Once the website is live and everything is set, people can visit your website by typing its name, apart from this you have to keep regular maintenance: including updates, security checks, and backups as this is crucial to ensure optimal performance and security for your website.
+
+What-is-web-hosting
+
+1. Domain Registration
+Before hosting your website you need a Domain Name like for example: www.geeksforgeeks.org this unique domain will act as an address for your website.
+
+2. Choose a Hosting Provider
+Now, once you have acquired your Domain Name you need to select a web hosting provider based on your website’s requirements such as storage, bandwidth, security features, and support, you select a company to host your site. These companies have servers, which are powerful computers specifically designed to store web files and serve them to visitors.
+
+3. Server Configuration
+Once you have chosen a hosting provider, that will allocate the space for your website on one of their servers like shared, VPS, dedicated, or cloud. The type of server is dependent upon your website requirement and the hosting package which you have chosen.
+
+4. Uploading Website Files
+Here, you have transferred your website's files (HTML, CSS, images, etc.) from your local computer to the server of your hosting provider. This is typically done using FTP (File Transfer Protocol) or through a control panel like cPanel.
+
+5. Database Setup
+You can set up your database using tools like MYSQL, and PostgreSQL, if your website is using dynamic content like WordPress, or blogs, then you’ll need a database for storing the content. By setting up the database this will link it to your website.
+
+6. DNS (Domain Name System) Configuration
+This ensures that when someone types in your domain name, it directs them to your hosted website on the correct server. DNS (Domain Name System) translates your friendly domain name for example www.geeksforgeeks.org into an IP address.
+
+Note: if you want to learn more about  DNS check out - Domain Name System
+
+7. Website accessibility
+After the configurations you have done, including DNS, are set, and have propagated through the global network, your website becomes accessible to the world. Now anyone will type your website’s domain name and it will be accessible to them.
+
+8. Ongoing Maintenance
+Websites are not "set it and forget it" projects. They require regular updates to both their content and underlying software. This also includes monitoring for potential issues, ensuring security measures are updated, backing up site data, and optimizing for performance.
+
+9. Handle Traffic
+Depending on the traffic your website gets, you might need to scale your resources. This could mean purchasing more bandwidth, and storage, or even upgrading your hosting plan.
+
+10. Technical Support and Troubleshooting
+If there are any issues like website downtime, slow performance, or any type of fallback in your website, then you or your hosting provider will need to troubleshoot and resolve them immediately.
+
+Websites to Help you During (Or After) the Above Flow
+Below are the most used and trusted tools to check a website’s status, DNS propagation, page load speed, and availability across regions:
+
+Purpose	Tool Name	Website Link	Description
+Check Domain Availability	GoDaddy Domain Checker	https://www.godaddy.com/	This helps you in picking a right domain for your business/blog.
+DNS Propagation Status	WhatsMyDNS	https://www.whatsmydns.net/	Since DNS propagation takes time, this helps you to see the current status.
+DNS Lookup (Public Records)	MXToolbox	https://mxtoolbox.com/	Lookup MX, A, CNAME, SPF, and other DNS records publicly.
+Global Page Load & Uptime Check	GeoPeeker	https://www.geopeeker.com/	Check how your site appears from multiple geographic locations.
+Website Uptime Monitoring	UptimeRobot	https://uptimerobot.com/	Monitor site uptime with alerts for downtime.
+Page Load Speed (Performance Test)	GTmetrix	https://gtmetrix.com/	Analyze page load speed, waterfall, and performance suggestions.
+Website Performance by Location	Pingdom	https://tools.pingdom.com/	Test site performance from different global locations.
+DNS, WHOIS, and Web Info Checker	DNSChecker	https://dnschecker.org/	Combines DNS lookup, propagation, WHOIS, and IP tools in one place.
+WHOIS and DNS Records	ICANN WHOIS	https://lookup.icann.org/	Official WHOIS information from the domain registrar authority.
+IP, Hostname, and Geolocation Info	IPinfo	https://ipinfo.io/	Shows IP address, hosting provider, ASN, and geolocation of a website or IP.
+
+
+
+Understanding DNS for a Public Website
+
+comments
+DNS is a hierarchical and distributed naming system that translates domain names into IP addresses. When you type a domain name like www.geeksforgeeks.org into your browser, DNS ensures that the request reaches the correct server by resolving the domain to its corresponding IP address. Without DNS, we’d have to remember the numerical IP address of every website we want to visit, which is highly impractical.
+
+How Does DNS Work?
+The DNS process can be broken down into several steps, ensuring that users can access websites by simply typing a domain name into their browser.
+
+How-DNS-Works-gif-ezgifcom-optimize-1
+How DNS Works?
+User Input: You enter a website address (for example, www.geeksforgeeks.org) into your web browser.
+Local Cache Check: Your browser first checks its local cache to see if it has recently looked up the domain. If it finds the corresponding IP address, it uses that directly without querying external servers.
+DNS Resolver Query: If the IP address isn’t in the local cache, your computer sends a request to a DNS resolver. The resolver is typically provided by your Internet Service Provider (ISP) or your network settings.
+Root DNS Server: The resolver sends the request to a root DNS server. The root server doesn’t know the exact IP address for www.geeksforgeeks.org but knows which Top-Level Domain (TLD) server to query based on the domain’s extension (e.g., .org).
+TLD Server: The TLD server for .org directs the resolver to the authoritative DNS server for geeksforgeeks.org.
+Authoritative DNS Server: This server holds the actual DNS records for geeksforgeeks.org, including the IP address of the website’s server. It sends this IP address back to the resolver.
+Final Response: The DNS resolver sends the IP address to your computer, allowing it to connect to the website’s server and load the page.
+Note: This entire process happens in milliseconds, enabling a fast and efficient browsing experience.
+
+This hierarchical approach allows DNS to handle billions of queries every day, ensuring the stability and scalability of the internet.
+
+Types of Domains
+DNS helps manage a wide variety of domain types to organize the vast number of websites on the internet. Here are the primary categories:
+
+Generic Domains: These include top-level domains like .com, .org, .net and .edu. These are widely used and recognized across the world.
+Country Code Domains: These domains represent specific countries or regions, such as .in for India, .us for the United States, .uk for the United Kingdom and .jp for Japan.
+Inverse Domains: Used for reverse DNS lookups, these domains help map IP addresses back to domain names. Reverse DNS lookups are useful for diagnostics and security purposes, ensuring that the source of network traffic is legitimate. So DNS can provide both the mapping for example to find the IP addresses of geeksforgeeks.org then we have to type
+nslookup www.geeksforgeeks.org 
+
+Types of DNS
+Understanding these categories is essential for managing domains effectively and recognizing the purpose behind different types of domains.
+
+Domain Name Server
+The client machine sends a request to the local name server, which, if the root does not find the address in its database, sends a request to the root name server, which in turn, will route the query to a top-level domain (TLD) or authoritative name server. The root name server can also contain some hostName to IP address mappings. The Top-level domain (TLD) server always knows who the authoritative name server is. So finally the IP address is returned to the local name server which in turn returns the IP address to the host.
+
+Domain Name Server
+Domain Name Server
+DNS Lookup
+DNS Lookup, also called DNS Resolution, is the process of translating a human-readable domain name (like www.example.com) into its corresponding IP address (like 192.0.2.1), which computers use to locate and communicate with each other on the internet. It allows users to access websites easily using names instead of remembering numeric IP addresses.
+
+DNS Lookup starts when a user types a domain name into their browser.
+The query goes through a series of servers: the DNS resolver, Root server, TLD server and authoritative server.
+Each server plays a role in finding the correct IP address for the domain.
+Once the IP address is found, the browser connects to the website’s server and loads the page.
+DNS Resolver
+DNS Resolver is simply called a DNS Client and has the functionality for initiating the process of DNS Lookup which is also called DNS Resolution. By using the DNS Resolver, applications can easily access different websites and services present on the Internet by using domain names that are very much friendly to the user and that also resolves the problem of remembering IP Address.
+
+Types of DNS Queries
+There are basically three types of DNS Queries that occur in DNS Lookup. These are stated below.
+
+Recursive Query: In this query, if the resolver is unable to find the record, in that case, DNS client wants the DNS Server will respond to the client in any way like with the requested source record or an error message.
+Iterative Query: Iterative Query is the query in which DNS Client wants the best answer possible from the DNS Server.
+Non-Recursive Query: Non-Recursive Query is the query that occurs when a DNS Resolver queries a DNS Server for some record that has access to it because of the record that exists in its cache.
+DNS Caching and TTL (Time-to-Live)
+DNS caching is a mechanism that stores DNS records locally to avoid querying external DNS servers repeatedly for the same information. This speeds up the browsing experience and reduces network traffic.
+
+TTL (Time-to-Live) is the amount of time that a DNS record is cached before it expires. When the TTL expires, the cache is cleared and a fresh DNS query must be made. The TTL is defined by the authoritative DNS server, which can adjust this based on the nature of the domain.
+
+For example, if the TTL for www.geeksforgeeks.org is set to 3600 seconds (1 hour), then the DNS record will be stored in the cache for one hour before it expires and requires a new lookup.
+
+By understanding how DNS caching and TTL work, students can learn how to optimize website performance and troubleshoot issues related to stale or outdated DNS records.
+
+How to Configure DNS for a Public Website
+When you register a domain and want to make your website publicly accessible, you need to configure DNS(Domain Name System) records.
+
+Here are the Main types of DNS Records typically involved:
+
+1. A Record(Address Record)- It points your domain to the ip address of your web server. The most fundamental DNS records and is neccessary to point your domain to ther server that host your website. Without this user cannot access to your site via your domain name.
+
+ For Example - example.com -> 192.0.2.1
+
+2. AAAA Record(IPv6 Address Record)- It maps the domain to an IPv6 address.It is used for modern networks that support IPv6, ensuring your website can be accessed via both IPv4 and IPv6 protocols.
+
+ For Example - example.com ➝ 2001:0db8:85a3::8a2e:0370:7334
+
+3. MX Records(Mail Exchange Records)- it tells mails servers where to deliver your emails for your domain.t's essential if you want to send and receive emails using your domain name (e.g., contact@yourdomain.com). It specifies the mail server and its priority.
+
+For Example - example.com -> mail.example.com
+
+4. CNAME Records(Canonical Name Records)- The CNAME Records allows you to alias one domain name to another. It's helpful when you want multiple subdomains(like www.yourdomain.com or blog.yourdomain.com) to point to the same domain or external services like Github Pages or Shopify.
+
+For Example - www.example.com -> example.com
+
+5. TXT Record (Text Record)- TXT Records store text-based data for a domain. They're often used for domain verification, email authentication (SPF, DKIM, DMARC), or other metadata that third-party services may require to confirm domain ownership or trust.
+
+  For Example - example.com.    IN    TXT    "v=spf1 include:_spf.google.com ~all"
+
+6. NS Record (Name Server Record)- It define which name servers are authoritative for a domain. When you purchase a domain, you'll typically need to point it to the name servers provided by your hosting company or DNS provider to manage other DNS records properly.
+
+For Example  - example.com.     IN     NS     ns1.hostingprovider.com.
+
+7. SRV Record (Service Record)- It is used to define location details for specific services such as SIP, XMPP, or Microsoft services. They specify the port, protocol, and target domain that handles the service.
+
+For Example -  VoIP or chat applications.
+
+8. PTR Record (Pointer Record)- PTR Records are used in reverse DNS lookups to map an IP address back to a domain name. They're primarily used for email server verification and security to prove that the IP sending mail matches a legitimate domain.
+
+For Example -  45.113.0.203.in-addr.arpa.  IN  PTR  mail.example.com.
+
+
+Install Visual Studio Code on Windows
+
+comments
+Visual Studio Code (VS Code) is a free, lightweight, and open-source code editor developed by Microsoft. It supports multiple operating systems, including Windows, macOS, and Linux.
+
+VS Code is designed to be versatile and user-friendly, offering features such as:
+
+Syntax Highlighting & Autocompletion: Improves code readability and speeds up coding.
+Integrated Debugging: Helps test and debug code directly in the editor.
+Built-in Git Integration: Enables easy version control and collaboration.
+Extensibility: Allows adding extensions for languages, themes, and tools.
+Steps for Installation of Visual Studio Code are the same as Windows for Mac users. For Ubuntu, click here
+
+Steps to Install Visual Studio Code on Windows
+[Step 1]: Visit the Official Website of the Visual Studio Code using any web browser like Google Chrome, Microsoft Edge, etc.
+
+1--Official-Page
+
+[Step 2]: Press the "Download for Windows" button on the website to start the download of the Visual Studio Code Application.
+
+2--Download-File
+
+[Step 3]: When the download finishes, then the Visual Studio Code Icon appears in the downloads folder.
+
+3--Open-File
+
+[Step 4]: Click on the Installer icon to start the installation process of the Visual Studio Code.
+
+[Step 5]: After the Installer opens, it will ask you to accept the terms and conditions of the Visual Studio Code. Click on I accept the agreement and then click the Next button.
+
+4--Accept-License
+
+[Step 6]: Choose the location data for running the Visual Studio Code. It will then ask you to browse the location. Then click on the Next button.
+
+5--Click-Next
+
+[Step 7]: Then it will ask to begin the installation setup. Click on the Install button.
+
+6--Click-Install
+
+[Step 8]: After clicking on Install, it will take about 1 minute to install the Visual Studio Code on your device.
+
+7--Wait
+
+[Step 9]: After the Installation setup for Visual Studio Code is finished, it will show a window like this below. Tick the "Launch Visual Studio Code" checkbox and then click Next.
+
+8--Finish
+
+[Step 10]: After the previous step, the Visual Studio Code window opens successfully. Now you can create a new file in the Visual Studio Code window and choose a language of yours to begin your programming journey!
+
+9--Ready
+
+So this is how we successfully installed Visual Studio Code on our Windows system. The steps mentioned in the above guideline can be used in any kind of Windows Browsers for Downloading & Installation VS Code on Windows 10. So, try these steps to get the VS Code IDE on your device as well.
+
+VS Code Extensions
+Extensions in Visual Studio Code (VS Code) are add-ons that extend the editor’s features, allowing developers to customize it for coding, debugging, and project management needs.
+
+Learn to add extensions in VS Code IDE: Add Extensions in VS Code
+Essential Extensions to be installed: 10 Best Visual Studio Code Extensions for Software Developers
+
+
+
+

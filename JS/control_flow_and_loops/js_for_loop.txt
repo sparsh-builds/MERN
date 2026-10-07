@@ -1,0 +1,49 @@
+Statement 1 is used to initialize the counter variable. A counter variable is used to keep track of the number of iterations in the loop. You can initialize multiple counter variables in statement 1.
+
+
+
+
+
+let x = 2;
+​
+for (; x <= 4; x++) {
+    console.log("Value of x:" + x);
+}
+
+Statement 2: Testing Condition
+This statement checks the boolean value of the testing condition. If the testing condition is true, the for loop will execute further, otherwise loop will end and the code outside the loop will be executed. It is executed every time the for loop runs before the loop enters its body.
+
+This is also an optional statement and JavaScript treats it as true if left blank. If this statement is omitted, the loop runs indefinitely if the loop control isn't broken using the break statement. It is explained below in the example
+
+Statement 3: Updating Counter Variable
+It is a controlled statement that controls the increment/decrement of the counter variable. It is also optional by nature and can be done inside the loop body.
+
+
+
+
+
+const subjects = ["Maths", "Science", "Polity", "History"];
+let i = 0;
+let len = subjects.length;
+let gfg = "";
+for (; i < len;) {
+    gfg += subjects[i];
+    //can be increased inside loop
+    i++;
+}
+console.log(gfg)
+
+
+
+More Loops in JavaScript
+JavaScript has different kinds of loops in Java. Some of the loops are:
+
+Loop	Description
+for loop	A loop that repeats a block of code a specific number of times based on a conditional expression.
+while loop	A loop that repeats a block of code as long as a specified condition is true.
+do-while loop	A loop that executes a block of code at least once, then repeats the block as long as a specified condition is true.
+for...of loop	Iterates over the values of an iterable object (like arrays, strings, maps, sets, etc.)
+for...in loop	Iterates over the enumerable properties of an object (including inherited properties).
+
+
+

@@ -1,0 +1,31 @@
+<!--Absolute positioning removes the element from the document flow and places it relative to the nearest ancestor with a positioning context (relative, absolute, or fixed).-->
+
+<html>
+<head>
+    <style>
+        .container {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            border: 2px solid black;
+            margin: 20px auto;
+        }
+        .absolute {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            background-color: pink;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Container with Relative Positioning</p>
+        <div class="absolute">Absolutely Positioned Element</div>
+    </div>
+</body>
+</html>
+
+<!--The pink box (.absolute) is positioned 50px down and 50px right within the .container.
+It does not affect other elements in the flow.-->

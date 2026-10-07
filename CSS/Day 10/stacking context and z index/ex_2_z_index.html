@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" viewport="width=device-width, initial-scale=1.0">
+    <title>Stacking with z-index</title>
+
+    <style>
+        .box {
+            box-sizing: border-box;
+            font-family: Arial;
+            color: #eee;
+            width: 125px;
+            height: 125px;
+            text-align: center;
+        }
+
+        .blue,
+        .green {
+            position: absolute;
+        }
+
+        .red {
+            background: red;
+            z-index: 100;
+            /*No effect since red is non-positioned*/
+        }
+
+        .green {
+            background: green;
+            top: 40px;
+            left: 40px;
+            z-index: 3;
+        }
+
+        .blue {
+            background: blue;
+            top: 80px;
+            left: 80px;
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box green">Positioned</div>
+    <div class="box blue">Positioned</div>
+    <div class="box red">Non-positioned</div>
+</body>
+
+</html>

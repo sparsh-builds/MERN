@@ -1,0 +1,52 @@
+The CSS Box Model defines how elements are sized and positioned by assigning a box in the DOM tree that determines an element's dimensions and its position relative to other elements.
+
+Content: The area where text or other content is displayed.
+Padding: Space between the content and the element's border.
+Border: A frame that wraps around the padding and content.
+Margin: Space between the element's border and neighboring elements.
+Screenshot-2024-12-10-105714
+Components of the box model
+Each element in the box model is made up of distinct layers that define its size and spacing on a web page.
+
+1. Content Area
+The content area is the core part of the CSS box model that holds the actual content of an element.
+
+The content area is the central part of the CSS box model, containing the main content (e.g., text, images, or elements like <p> or <span>).
+It can be styled with CSS properties like height and width.
+The content edge refers to the four edges of the content area.
+
+Left content edge
+Right content edge
+Top content edge
+Bottom content edge
+2. Padding Area
+The padding area is the space between an element’s content and its border, contributing to the element’s overall size and spacing.
+
+The padding area is the space between the content and the border of an element.
+It includes the areas highlighted in light green and skin color in the example.
+The distance between the content edge and the border is the padding.
+The border marks the end of the padding area.
+The padding area contributes to the element's total dimensions.
+Padding can be adjusted using CSS properties.
+It works similarly with box-sizing: content-box and box-sizing: border-box, but with slight calculation differences.
+3. Border Area
+The border area is the outer boundary of an element that surrounds the padding and contributes to the element’s total height and width.
+
+The area that marks the end of an element is called as the border it is the outer fencing for the element.
+The default border properties are provided in CSS to control the thickness of this outer fencing.
+The border area also add 's up to the complete height and width of the element.
+The more the border width the more will be the height or width of the element.
+In the above image the area marked with skin color is called the border area.
+4. Margin Area
+The margin area is the space outside an element’s border that controls the distance between the element and surrounding or parent elements.
+
+The area outside the border of an element is called the margin area.
+Basically this area depends on the parent of the element.
+The distance between the border of the parent element and the border of the child element is called as the margin.
+CSS has provides certain margin properties to get control over this scenario.
+Box Sizing Property in CSS
+There are two type's of box-sizing properties in CSS
+
+1. Content-Box(default property)
+When box-sizing is set to content-box (the default), the element’s final size includes the content dimensions plus padding.
+

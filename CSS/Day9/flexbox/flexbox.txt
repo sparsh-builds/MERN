@@ -1,0 +1,44 @@
+The Flexible Box Layout module introduces a one-dimensional layout system that handles space distribution and item alignment effectively. It works seamlessly for horizontal (row) or vertical (column) arrangements, making it a go-to solution for responsive designs.
+
+Flexbox eliminates the need for floats or complex positioning, enabling responsive and dynamic layouts.
+It aligns items efficiently, distributing space within a container, even when their sizes are dynamic or unknown.
+Flexbox is supported in all modern browsers, making it a reliable choice for creating flexible designs.
+
+
+Flexbox Axes
+Flexbox operates on two axes:
+
+1. Main Axis:
+Main Start: The start of the main axis.
+Main Size: The length between Main Start and Main End.
+Main End: The endpoint of the main axis.
+newmg
+Flexbox Main Axis
+2. Cross Axis:
+The cross axis will be perpendicular to the main axis.
+
+Cross Start: The start of the cross axis.
+Cross Size: The length between Cross Start and Cross End.
+Cross End: The endpoint of the cross axis.
+newmg
+Flexbox Cross Axis
+For Row:-
+
+Main axis -> horizontal and cross axis -> vertical
+
+For column :
+Main -> vertical and cross -> horizontal
+
+Flex Direction Properties
+Left to Right: flex-direction: row;
+Right to Left: flex-direction: row-reverse;
+Top to Bottom: flex-direction: column;
+Bottom to Top: flex-direction: column-reverse;
+
+Aligning and Justifying Content
+Flexbox provides several properties for aligning and justifying content within the container:
+
+justify-content: Aligns items along the main axis (e.g., flex-start, flex-end, center, space-between, space-around).
+align-items: Aligns items along the cross axis (e.g., stretch, center, flex-start, flex-end).
+align-content: Aligns rows within a flex container when there is extra space on the cross axis.
+

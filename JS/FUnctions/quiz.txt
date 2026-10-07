@@ -1,0 +1,9 @@
+const bar = foo.bind(null, 1);
+
+The first argument (null) sets the this context (which isn't used here).   The subsequent argument 1 permanently presets (binds) the first parameter x to 1.   
+
+
+null -> object 
+
+default name -> fiun cname or var name 
+

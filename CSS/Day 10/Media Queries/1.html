@@ -1,0 +1,91 @@
+<!--Media Queries is a CSS3 feature that makes a website page adapt its layout to different screen sizes and media types. Media queries are CSS rules that apply specific styles based on the characteristics of the user's device or viewport. These characteristics can include screen width, height, orientation, resolution, and more.-->
+
+<!--A media type, which tells the browser what kind of media this code is for (print or screen).
+A media expression, which is a rule, or test that must be passed for the contained CSS to be applied.
+A set of CSS rules that will be applied if the test passes and the media type is correct.
+Example:-->
+
+
+<!--@media (max-width: 768px) {
+    body {
+      background-color: lightblue;
+    }
+  }-->
+
+  <!-- It consist of:
+
+  A media type, which tells the browser what kind of media this code is for (print or screen).
+  A media expression, which is a rule, or test that must be passed for the contained CSS to be applied.
+  A set of CSS rules that will be applied if the test passes and the media type is correct.
+  Example:
+  @media (max-width: 768px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+  What this means:
+  
+  The CSS inside this block will only apply if the screen width is 768 pixels or less (like on mobile devices).
+  You can target screen size (width, height), resolution (min-resolution), orientation (landscape, portrait), and more.
+
+  Media Types
+  Media Types describe the category of device type. Media type is optional and by default, it is considered as 
+   type. Media Types are categorized into four types.
+  
+  all: for all device types.
+  print: for printers
+  screen :  for smartphones, tablets, TVs and computer screens
+  speech :  for screen readers that “read” the page out loud.
+  Width and Height
+  The most commonly used media feature for building responsive layouts is the viewport width, as it’s widely supported across all modern browsers. We can apply specific CSS styles based on whether the viewport is greater than, less than, or exactly equal to a certain width using the width media feature, along with optional min- or max- prefixes. -->
+
+
+<!-- 
+  For example, to change the background color of a .container element to light gray when the viewport is exactly 800 pixels wide, you can use the following media query: -->
+
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Media Query Example</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+  
+      .container {
+        width: 90%;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: white;
+        border: 1px solid #ccc;
+        text-align: center;
+        transition: background-color 0.3s ease;
+      }
+  
+      /* Media query: screen width is 800px or less */
+      @media (max-width: 800px) {
+        .container {
+          background-color: #ffcccb; /* Light red */
+        }
+      }
+    </style>
+  </head>
+  <body>
+  
+    <div class="container">
+      <h2>Responsive Media Query Test</h2>
+      <p>Resize your browser window to 800px wide or less to see the background color turn light red.</p>
+    </div>
+  
+  </body>
+  </html>
+
+  <!-- How to Test
+Open this code in any browser.
+Slowly resize the window to 800px or narrower.
+The container’s background will turn light red (#ffcccb). -->

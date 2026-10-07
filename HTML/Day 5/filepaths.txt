@@ -1,0 +1,40 @@
+HTML file paths specify the location of resources like images, videos, scripts, and documents so the browser can load them correctly.
+
+Help the browser locate and load external resources.
+Used for files such as images, videos, scripts, and documents.
+Specified using attributes like src and href.
+Types of File Paths
+File paths can be absolute or relative, depending on how the resource location is specified.
+
+1. Absolute File Paths
+It specifies the full URL or complete location of a resource, starting from the root of the website or including the domain name.
+
+Point directly to a resource's location on the internet and include the full URL, which consists of the protocol (http:// or https://), domain, and path to the resource.
+Best for resources that are hosted externally. The browser knows exactly where to find them regardless of the current document’s location.
+Syntax:
+
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/geek.png" alt="My Image">
+
+2. Relative File Paths
+Relative file paths locate resources based on the HTML file’s location, keeping links portable.
+
+Specify the path to a resource in relation to the location of the HTML file currently being viewed.
+Ideal for resources within the same website. Keeps your HTML portable if the domain changes since the path doesn’t need to be updated.
+Syntax:
+
+<img src="images/geeks.jpg" alt="My Image">
+
+
+
+Relative Path Variants
+Document-relative paths start from the HTML file’s folder, while root-relative paths start from the server’s root directory.
+
+Document-relative paths: As in the above example, the path starts from the directory of the current HTML document.
+Root-relative paths: Start with a slash (/), which tells the browser to look for the resource starting from the root directory of the server. Example:
+<img src="/images/geeks.jpg">
+
+Directory-relative paths: Use dot notation to navigate the directory structure:
+
+./ refers to the current directory.
+../ moves up one directory level.
+

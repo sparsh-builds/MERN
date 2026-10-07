@@ -1,0 +1,229 @@
+How to create a GeeksforGeeks Clone ?
+
+comments
+In this project, we'll build the GeeksforGeeks website using only HTML and CSS, focusing on clean design and adaptive structure. By leveraging flexbox and media queries, ensure a seamless user experience across all screen sizes
+
+Build a GeeksforGeeks Clone
+Set up HTML5 structure, including meta tags, for responsiveness, and link an external CSS file for styling.
+Design the header section with a green background, and use Flexbox to align the logo and search box side by side.
+Create a horizontal navigation bar below the header with key links like Tutorials, Practice, Jobs, etc., styled using custom CSS.
+Add a hero section featuring a welcome message and brief description, centered using Flexbox for visual balance.
+Develop a content section with cards (data structures, algorithms, web development), styled with padding, shadows, and rounded corners for a clean UI.
+Implement responsive design using CSS media queries to ensure layout adjustments for tablets and mobile devices.
+Create a footer section with consistent branding and a centered copyright.
+Example: This example shows the implementation of the above approach.
+
+filename: index.html
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GeeksforGeeks Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo">GeeksforGeeks</div>
+      <input type="text" class="search-box" placeholder="Search..."/>
+    </div>
+  </header>
+​
+  <!-- Navigation -->
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#">Tutorials</a></li>
+      <li><a href="#">Practice</a></li>
+      <li><a href="#">Jobs</a></li>
+      <li><a href="#">Courses</a></li>
+      <li><a href="#">GATE</a></li>
+    </ul>
+  </nav>
+​
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to GeeksforGeeks</h1>
+    <p>Learn coding, solve problems, and crack your dream job!</p>
+  </section>
+  <!-- Content Section -->
+  <section class="content">
+    <div class="card">
+      <h2>Data Structures</h2>
+      <p>Explore arrays, linked lists, trees, and graphs in depth.</p>
+    </div>
+    <div class="card">
+      <h2>Algorithms</h2>
+      <p>Learn about searching, sorting, recursion, and dynamic programming.</p>
+    </div>
+    <div class="card">
+      <h2>Web Development</h2>
+      <p>HTML, CSS, JavaScript, React — everything to build websites.</p>
+    </div>
+  </section>
+​
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 GeeksforGeeks Clone. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+
+filename:style.css
+
+
+/* Write CSS Here *//* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f2f2f2;
+}
+
+header {
+  background-color: #2f8d46;
+  color: white;
+  padding: 15px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.search-box {
+  padding: 7px 10px;
+  border: none;
+  border-radius: 4px;
+  width: 200px;
+}
+
+/* Navigation */
+nav {
+  background-color: #3cb371;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 10px 0;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #e7f7ef;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  color: #2f8d46;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #333;
+}
+
+/* Cards Section */
+.content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.card {
+  background: white;
+  width: 300px;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  color: #2f8d46;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #2f8d46;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 90%;
+  }
+}
+
+
+Output:
+
+gfgclone
+gfg clone
+Note: Experiment  your  website by adding interactive features to the navigation bar, header, body, and content containers — like hover effects, animated transitions, collapsible menus, or dark mode toggles — to deliver a more dynamic and user-friendly experience!

@@ -1,0 +1,77 @@
+A Promise in JavaScript is an object representing the eventual completion (or failure) of an asynchronous operation and its resulting value.
+
+Instead of passing callbacks into functions (which often led to deeply nested "callback hell"), a promise lets asynchronous methods return values like synchronous methods: instead of returning the final value, the method returns a promise to supply the value in the future.
+
+The Three Promise States
+A promise is always in one of three mutually exclusive states:
+
+State	Meaning	Settled?
+pending	Initial state; neither fulfilled nor rejected.	No
+fulfilled	The operation completed successfully, returning a result.	Yes
+rejected	The operation failed, returning a reason/error.	Yes
+Once a promise transitions from pending to either fulfilled or rejected, it is settled and cannot change its state or value again.
+
+How to Create a Promise
+You create a promise using the new Promise() constructor, which takes an executor function with two arguments: resolve and reject.
+
+JavaScript
+const fetchData = new Promise((resolve, reject) => {
+  const success = true;
+
+  setTimeout(() => {
+    if (success) {
+      resolve("Data fetched successfully!"); // Moves to fulfilled state
+    } else {
+      reject(new Error("Failed to fetch data.")); // Moves to rejected state
+    }
+  }, 1000);
+});
+Consuming Promises
+1. Using .then(), .catch(), and .finally()
+.then(onFulfilled): Runs when the promise resolves. Returns a new promise, allowing chaining.
+
+.catch(onRejected): Runs if any promise in the chain rejects or throws an error.
+
+.finally(): Runs regardless of the outcome (useful for cleanup like stopping loading spinners).
+
+JavaScript
+fetchData
+  .then((result) => {
+    console.log(result); // "Data fetched successfully!"
+    return result.toUpperCase();
+  })
+  .then((transformed) => {
+    console.log(transformed); // "DATA FETCHED SUCCESSFULLY!"
+  })
+  .catch((error) => {
+    console.error("Error occurred:", error.message);
+  })
+  .finally(() => {
+    console.log("Operation complete.");
+  });
+2. Using async / await (Modern Syntax)
+async/await is syntactic sugar over promises that lets you write asynchronous code that reads sequentially:
+
+JavaScript
+async function getData() {
+  try {
+    const result = await fetchData; // Pauses execution until fetchData settles
+    console.log(result);
+  } catch (error) {
+    console.error("Caught error:", error.message);
+  } finally {
+    console.log("Operation complete.");
+  }
+}
+
+getData();
+Useful Static Combinators
+JavaScript provides built-in methods on Promise to handle multiple asynchronous tasks concurrently:
+
+Promise.all([...]): Resolves when all promises resolve; rejects immediately if any promise rejects (all-or-nothing).
+
+Promise.allSettled([...]): Waits for all promises to settle, returning an array of objects detailing each promise's outcome (status and value/reason).
+
+Promise.race([...]): Settles as soon as the first promise settles (fulfills or rejects).
+
+Promise.any([...]): Resolves as soon as the first promise fulfills; rejects only if all promises reject.

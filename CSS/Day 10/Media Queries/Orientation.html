@@ -1,0 +1,70 @@
+<!-- Orientation
+The orientation media feature allows you to apply different styles based on the orientation of the device, such as portrait (vertical) or landscape (horizontal).
+
+Example Use Case:
+
+You might want to adjust the layout when the device is held portrait versus landscape. For example, in landscape mode, you might want to display a wider layout, whereas in portrait mode, you might want to stack elements vertically. -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Orientation Media Query Example</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      width: 90%;
+      margin: 50px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      text-align: center;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Default: Portrait orientation */
+    .container {
+      background-color: #f0f0f0;
+    }
+
+    /* Landscape orientation */
+    @media (orientation: landscape) {
+      .container {
+        background-color: #b3ffcc; /* light green */
+      }
+    }
+
+    /* Portrait orientation */
+    @media (orientation: portrait) {
+      .container {
+        background-color: #b3ffcc;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Responsive Orientation Media Query Test</h2>
+    <p>Rotate your device or resize your window to see the background color change.</p>
+  </div>
+</body>
+</html>
+
+
+<!-- How to Test:
+Open this code in a browser or on a mobile device.
+Rotate the device or resize the window to switch between portrait and landscape orientations.
+You'll see the background color change depending on the orientation.
+How Does Responsive Design Work?
+Define Breakpoints: Identify key screen widths for design changes mostly mobile (320px — 480px), tablets (481px — 768px), laptops (769px — 1024px), and desktops(1025px — 1200px) these breakpoints are industry standard. But you can customize them based on your project's requirements.
+Write Media Queries: Use CSS @media to apply styles at breakpoints. They are CSS rules that apply specific styles when certain conditions are met. These conditions are typically based on screen width using the min-width and max-width properties
+Adjust Layouts: To create responsive layouts, use CSS features like Flexbox and CSS Grid. These layout techniques provide a flexible and fluid structure that adapts to different screen sizes.
+Test on Various Devices: Ensure the design works well across different screens using dev tools. Pay attention to user interactions, load times, and accessibility to ensure a seamless experience across all devices.
+Refine as Needed: Continuously optimize and adjust for a seamless user experience. Responsive design is an ongoing process. After testing, gather feedback, and make necessary adjustments to improve the user experience further. -->

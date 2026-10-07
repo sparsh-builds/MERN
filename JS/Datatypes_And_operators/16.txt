@@ -1,0 +1,598 @@
+JavaScript data types define what kind of values a variable can hold and how those values behave in a program. They determine how data is stored in memory and how operations like comparison, calculation, and conversion work.
+
+Each data type has its own methods and operations that control how it can be used.
+Understanding data types helps prevent errors and makes code more efficient and reliable.
+
+JavaScript Data Type Categories
+JavaScript data types are categorized into Primitive and Non-Primitive types
+
+data_types_in_javascript
+Primitive Data Type
+Primitive data types in JavaScript represent simple, immutable values stored directly in memory, ensuring efficiency in both memory usage and performance.
+
+1. Number
+The Number data type in JavaScript includes both integers and floating-point numbers. Special values like Infinity, -Infinity, and NaN represent infinite values and computational errors, respectively.
+
+
+let n1 = 2;
+console.log(n1)
+​
+let n2 = 1.3;
+console.log(n2)
+​
+let n3 = Infinity;
+console.log(n3)
+​
+let n4 = 'something here too' / 2;
+console.log(n4)
+
+
+
+
+
+2. String
+A String in JavaScript is a series of characters that are surrounded by quotes. There are three types of quotes in JavaScript, which are.
+
+
+let s1 = "Hello There";
+console.log(s1); 
+​
+let s2 = 'Single quotes work fine';
+console.log(s2); 
+​
+let s3 = `can embed ${s1}`;
+console.log(s3);
+
+
+
+3. Boolean
+The boolean type has only two values i.e. true and false.
+
+
+let b1 = true;
+console.log(b1);  
+​
+let b2 = false;
+console.log(b2);
+4. Null
+The special null value does not belong to any of the default data types. It forms a separate type of its own which contains only the null value.
+
+
+
+
+
+let age = null;
+console.log(age)
+The 'null' data type defines a special value that represents nothing, or empty value.
+
+5. Undefined
+A variable that has been declared but not initialized with a value is automatically assigned the undefined value. It means the variable exists, but it has no value assigned to it.
+
+
+
+
+
+let a;
+console.log(a);
+6. Symbol (Introduced in ES6)
+Symbols, introduced in ES6, are unique and immutable primitive values used as identifiers for object properties. They help create unique keys in objects, preventing conflicts with other properties.
+
+
+
+
+
+let s1 = Symbol("Geeks");
+let s2 = Symbol("Geeks");
+console.log(s1 == s2);
+7. BigInt (Introduced in ES2020)
+BigInt is a built-in object that provides a way to represent whole numbers greater than 253. The largest number that JavaScript can reliably represent with the Number primitive is 253, which is represented by the MAX_SAFE_INTEGER constant.
+
+
+
+
+
+let b = BigInt("0b1010101001010101001111111111111111");
+console.log(b);
+Non-Primitive Data Types
+The data types that are derived from primitive data types are known as non-primitive data types. It is also known as derived data types or reference data types.
+
+1. Object
+JavaScript objects are key-value pairs used to store data, created with {} or the new keyword. They are fundamental as nearly everything in JavaScript is an object.
+
+
+
+
+
+let gfg = {
+    type: "Company",
+    location: "Noida"
+}
+console.log(gfg.type)
+2. Arrays
+An Array is a special kind of object used to store an ordered collection of values, which can be of any data type.
+
+
+
+
+
+let a1 = [1, 2, 3, 4, 5];
+console.log(a1);
+​
+let a2 = [1, "two", { name: "Object" }, [3, 4, 5]];
+console.log(a2);
+3. Function
+A function in JavaScript is a block of reusable code designed to perform a specific task when called.
+
+
+
+
+
+// Defining a function to greet a user
+function greet(name) { return "Hello, " + name + "!"; }
+// Calling the function
+console.log(greet("Ajay"));
+4. Date Object
+The Date object in JavaScript is used to work with dates and times, allowing for date creation, manipulation, and formatting.
+
+
+
+
+
+// Creating a new Date object for the
+// current date and time
+let currentDate = new Date();
+​
+// Displaying the current date and time
+console.log(currentDate);
+5. Regular Expression
+A RegExp (Regular Expression) in JavaScript is an object used to define search patterns for matching text in strings.
+
+
+
+
+
+// Creating a regular expression to match the word "hello"
+let pattern = /hello/;
+​
+// Testing the pattern against a string
+// Returns false because "hello" is not present
+let result = pattern.test("Hello, world!"); 
+​
+console.log(result);
+
+
+Data Types in Javascript
+
+Primitive Data types
+
+Numeric Type
+
+Number
+
+bigint
+
+Non-Numeric Type
+
+String
+
+Boolean
+
+Null
+
+Undefined
+
+Symbol
+
+Non-primitive Data types
+
+object
+
+Arrys (Note: Arrays)
+
+function
+
+Date object
+
+regular expression
+
+In JavaScript, scope defines the accessibility of variables in different parts of your code. It determines where a variable can be accessed or modified.
+
+Before ES6 (Released in 2015), variables were declared only with var, which is function-scoped (accessible within the function) and global Scoped (Accessible everywhere) and prone to issues like hoisting and global pollution.
+let and const were introduced with ES6. Variables declared with let and const are either block scoped or global-scooped.
+Types of Scope
+Global Scope: Variables declared outside any function or block are accessible everywhere in the code.
+Function Scope: Variables declared with var inside a function are accessible only within that function. Function can be nested in JavaScript and the inner function can access outer function members and this is called Lexical Scope.
+Block Scope: Variables declared with let or const inside a block ({}) are accessible only within that block.
+Modular Scope: Introduced in ES6, ES Modules are the standard way to organize JavaScript code into reusable and maintainable chunks. Each module has its own scope, and anything declared within a module is private by default unless explicitly exported.
+
+Example of Global Scope
+
+
+
+
+
+// Using var
+var x = 10;
+console.log(x);
+​
+// Using let
+let y = 20;
+console.log(y); 
+​
+// Using const
+const z = 30;
+console.log(z);
+
+Output
+10
+20
+30
+Note: Here let and const are behaving similar to var but they do not attach to the window object. They are scoped globally but are not properties of window, making them safer and less prone to conflicts.
+
+
+var globalVar = "I am global";
+console.log(window.globalVar); 
+
+let globalLet = "I am block-scoped";
+console.log(window.globalLet);
+global-scope-of-let
+Understanding variable scopes in JavaScript
+Examples of Block Scope
+
+
+if (true) {
+    var x = 10;   // Function-scoped (not block-scoped)
+    let y = 20;   // Block-scoped
+    const z = 30; // Block-scoped
+}
+
+console.log(x); // Output: 10 (accessible outside the block)
+console.log(y); // Error: y is not defined (block-scoped)
+console.log(z); // Error: z is not defined (block-scoped)
+Example of Function Scope
+
+
+
+
+
+function example() {
+    var x = 10;   // Function-scoped
+    let y = 20;   // Function-scoped
+    const z = 30; // Function-scoped
+    console.log(x, y, z); // Output: 10 20 30
+}
+​
+example();
+​
+console.log(x); // Error: x is not defined
+console.log(y); // Error: y is not defined
+console.log(z); // Error: z is not defined
+
+math.js 
+Example of Modular Scope
+
+
+
+
+
+const PI = 3.14;
+function add(a, b) {
+  return a + b;
+}
+​
+module.exports = { PI, add };
+
+App.js 
+
+const { PI, add } = require('./math');
+
+console.log(PI);        // 3.14
+console.log(add(2, 3)); // 5
+
+Lexical Scope (Closures)
+Lexical scope means a function can access variables from its outer scope even after the outer function has finished execution.
+
+
+
+
+
+function outer() {
+    let outerVar = "I'm in the outer scope!";
+    function inner() {
+        console.log(outerVar); // Accessing parent's scope
+    }
+    inner();
+}
+outer();
+
+Different cases of scope
+We have a global variable defined in the first line in the global scope. Then we have a local variable defined inside the function fun(). 
+
+
+
+
+
+let globalLet = "This is a global variable";
+{
+    let localLet = "This is a local variable";
+     // This is a global variable
+    console.log(globalLet);
+    
+    // This is a local variable
+    console.log(localLet);   
+}
+
+Global Variables: Inside a function, global variables (declared outside) are accessible.
+Local Variables: Local variables (declared inside the function) are also accessible within that function.
+Let’s move the console.log statements outside the function and put them just after calling the function. 
+
+
+let globalLet = "This is a global variable"
+
+function fun() {
+    let localLet = "This is a local variable"
+
+}
+fun();
+console.log(globalLet);
+console.log(localLet);
+Global Variable: globalLet is accessible outside the function since it’s declared in the global scope.
+Local Variable: localLet is not accessible outside the function, causing an error, as it’s scoped only within the function.
+
+Word of caution: Whenever you are declaring variables, always use the prefix let. If you don’t use the let keyword, then the variables are by default created in the global scope. For instance, in the above example
+
+let’s just remove the keyword let before the declaration of localLet. 
+
+
+
+
+
+let globalLet = "This is a global variable";;
+​
+function fun() {
+    localLet = "This is a local variable";
+}
+​
+fun();
+console.log(globalLet); // This is a global variable
+console.log(localLet); // This is a local variable
+
+Global Variable: globalLet remains accessible as it is declared in the global scope.
+Implicit Global Variable: Without the let keyword, localLet is treated as a global variable, even though it was intended to be local to the function.
+One of the most asked questions in interviews is the case where the global as well as local variable has the same name. Let’s see what happens then. 
+
+
+
+
+
+let globalLet = "This is a global variable"
+​
+function fun() {
+    let globalLet = "This is a local variable"
+}
+fun();
+console.log(globalLet); // This is a global variable
+
+Output
+This is a global variable
+Local Variable: Inside the function, globalLet is re-declared as a local variable, but it does not affect the global globalLet because of the function scope.
+Global Variable: The global globalLet remains unchanged and accessible outside the function, so console.log(globalLet) outputs the global value.
+Let’s move the console.log statement inside the function fun(). 
+
+
+
+
+
+let globalLet = "This is a global variable";
+​
+function fun() {
+    let globalLet = "This is a local variable";
+    console.log(globalLet);
+}
+fun();
+
+Output
+This is a local variable
+Local Variable Preference: Inside the function, JavaScript first looks for globalLet in the local scope, finds it, and logs the local variable.
+Scope Search: If globalLet weren’t declared locally, JavaScript would search for it in the global scope.
+What if we want to access the global variable instead of the local one here? Well, the window object comes to our rescue. All the global variables declared using the "var" keyword or without using any keyword are attached to the window object and thus we can access the global variable name as shown in the example below. 
+
+
+
+
+
+let globalLet = "This is a global variable";
+​
+function fun() {
+    let globalLet = "This is a local variable";
+    console.log(window.globalLet); // This is a global variable
+}
+fun();
+Output:
+
+undefined
+let variables don’t get added to the window object, so window.globalLet is undefined.
+The local let shadows the global one but still isn’t on window.
+
+
+
+JavaScript operators are symbols or keywords used to perform operations on values and variables. They are the building blocks of JavaScript expressions and can manipulate data in various ways.
+
+There are various operators supported by JavaScript:
+
+privacy_and_surveillance_threats.webpprivacy_and_surveillance_threats.webp
+
+
+1. JavaScript Arithmetic Operators
+Arithmetic Operators perform mathematical calculations like addition, subtraction, multiplication, etc.
+
+
+
+
+
+const sum = 5 + 3; // Addition
+const diff = 10 - 2; // Subtraction
+const p = 4 * 2; // Multiplication
+const q = 8 / 2; // Division
+console.log(sum, diff, p, q);
++ adds two numbers.
+- subtracts the second number from the first.
+* multiplies two numbers.
+/ divides the first number by the second.
+
+
+
+2. JavaScript Assignment Operators
+Assignment operators are used to assign values to variables. They can also perform operations like addition or multiplication while assigning the value.
+
+let n = 10;
+n += 5;
+n *= 2;
+console.log(n);
+= assigns a value to a variable.
++= adds and assigns the result to the variable.
+*= multiplies and assigns the result to the variable.
+
+
+
+
+3. JavaScript Comparison Operators
+Comparison operators compare two values and return a boolean (true or false). They are useful for making decisions in conditional statements.
+
+console.log(10 > 5);
+console.log(10 === "10");
+> checks if the left value is greater than the right.
+       -->  === checks for strict equality (both type and value).
+Other operators include <, <=, >=, and !==.
+
+
+== loose equality 
+
+
+4. JavaScript Logical Operators
+Logical operators are mainly used to perform the logical operations that determine the equality or difference between the values.
+
+
+
+
+
+const a = true, b = false;
+console.log(a && b); // Logical AND
+console.log(a || b); // Logical OR
+&& returns true if both operands are true.
+|| returns true if at least one operand is true.
+! negates the boolean value.
+5. JavaScript Bitwise Operators
+Bitwise operators perform operations on binary representations of numbers.
+
+
+
+
+
+const res = 5 & 1; // Bitwise AND
+console.log(res);
+& performs AND operation on each bit.
+| performs OR operation on each bit.
+^ performs XOR (exclusive OR) on each bit.
+~ inverts all bits (NOT operator).
+<< shifts bits to the left.
+>> shifts bits to the right (with sign).
+>>> shifts bits to the right (without sign).
+6. JavaScript Ternary Operator
+The ternary operator is a shorthand for conditional statements. It takes three operands.
+
+
+
+
+
+const age = 18;
+const status = age >= 18 ? "Adult" : "Minor";
+console.log(status);
+condition ? expression1 : expression2 evaluates expression1 if the condition is true, otherwise evaluates expression2.
+
+7. JavaScript Comma Operator
+Comma Operator (,) mainly evaluates its operands from left to right sequentially and returns the value of the rightmost operand. 
+
+
+
+
+
+let n1, n2
+const res = (n1 = 1, n2 = 2, n1 + n2);
+console.log(res);
+The final result of the expression is the rightmost value.
+8. JavaScript Unary Operators
+Unary operators operate on a single operand (e.g., increment, decrement).
+
+
+
+
+
+let x = 5;
+​
+console.log(+x);
+console.log(-x);
+​
+console.log(++x);
+console.log(--x);
+​
+console.log(!x);
++ converts a value to a number.
+- negates a value (changes its sign).
+++ increments a value by 1.
+-- decrements a value by 1.
+! converts to boolean and reverses the value (true ↔ false).
+typeof returns the data type of a variable.
+delete removes a property from an object.
+9. JavaScript Relational Operators
+JavaScript Relational operators are used to compare its operands and determine the relationship between them. They return a Boolean value (true or false) based on the comparison result.
+
+
+
+
+
+const obj = { length: 10 };
+console.log("length" in obj);
+console.log([] instanceof Array);
+in checks if a property exists in an object.
+instanceof checks if an object is an instance of a constructor.
+10. JavaScript BigInt Operators
+BigInt operators allow calculations with numbers beyond the safe integer range.
+
+
+
+
+
+const big1 = 123456789012345678901234567890n;
+const big2 = 987654321098765432109876543210n;
+console.log(big1 + big2);
+Operations like addition, subtraction, and multiplication work with BigInt.
+Use n suffix to denote BigInt literals.
+11. JavaScript String Operators
+JavaScript String Operators include concatenation (+) and concatenation assignment (+=), used to join strings or combine strings with other data types.
+
+
+
+
+
+const s = "Hello" + " " + "World";
+console.log(s);
++ concatenates strings.
++= appends to an existing string.
+12. JavaScript Chaining Operator (?.)
+The optional chaining operator allows safe access to deeply nested properties without throwing errors if the property doesn’t exist.
+
+
+const obj = { name: "Aman", address: { city: "Delhi" } };
+console.log(obj.address?.city);
+console.log(obj.contact?.phone);
+
+Output
+Delhi
+undefined
+?. safely accesses a property or method.
+Returns undefined if the property doesn’t exist.
+We have a list of JavaScript Operators Reference where you can know more about these operators.
+
+
+

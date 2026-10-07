@@ -1,0 +1,31 @@
+<!--Fixed positioning removes the element from the flow and positions it relative to the viewport. It remains in place even when the page scrolls.-->
+
+
+<html>
+<head>
+    <style>
+        .fixed {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: lightgreen;
+            padding: 20px;
+            border: 2px solid black;
+        }
+        .content {
+            height: 1200px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Fixed Positioning Example</h2>
+    <div class="fixed">Fixed Box</div>
+    <div class="content">
+        <p>Scroll down to see that the fixed box stays in place.</p>
+        <p>This content simulates a long page.</p>
+    </div>
+</body>
+</html>
+
+<!--The fixed element stays at the top-right corner of the viewport even as the user scrolls.-->

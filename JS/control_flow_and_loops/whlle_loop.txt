@@ -1,0 +1,22 @@
+Do-While loop
+A Do-While loop is another type of loop in JavaScript that is similar to the while loop, but with one key difference: the do-while loop guarantees that the block of code inside the loop will be executed at least once, regardless of whether the condition is initially true or false .
+
+Comparison between the while and do-while loop:
+The do-while loop executes the content of the loop once before checking the condition of the while loop. While the while loop will check the condition first before executing the content.
+
+While Loop
+
+Do-While Loop
+
+It is an entry condition looping structure.
+
+It is an exit condition looping structure.
+
+The number of iterations depends on the condition mentioned in the while block.
+
+Irrespective of the condition mentioned in the do-while block, there will a minimum of 1 iteration.
+
+The block control condition is available at the starting point of the loop.
+
+The block control condition is available at the endpoint of the loop
+

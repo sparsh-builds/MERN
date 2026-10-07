@@ -1,0 +1,56 @@
+<!--The stacking order describes the order in which HTML elements are positioned. By default, HTML elements are positioned in the following order:
+
+Root element(<html>)
+Non-positioned elements in the order they're defined(elements with no position described, i.e., static)
+Positioned elements in the order they are defined(elements with a position other than static)-->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Default stacking order</title>
+
+    <style>
+        .box {
+            box-sizing: border-box;
+            font-family: Arial;
+            color: #eee;
+            width: 125px;
+            height: 125px;
+            text-align: center;
+        }
+
+        .blue,
+        .green {
+            position: absolute;
+        }
+
+        .red {
+            background: red;
+        }
+
+        .green {
+            background: green;
+            top: 40px;
+            left: 40px;
+        }
+
+        .blue {
+            background: blue;
+            top: 80px;
+            left: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box green">Positioned</div>
+    <div class="box blue">Positioned</div>
+    <div class="box red">Non-positioned</div>
+</body>
+
+</html>
+
+<!--z-index: In order to change the stacking order, we can use z-index. Element with higher z-index is placed on top of the element with lower z-index. Let us use the same. An important thing to note is that in order to use z-index, elements should be positioned. To learn more about CSS, positions, refer this article.-->
+

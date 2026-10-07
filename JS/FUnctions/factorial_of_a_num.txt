@@ -1,0 +1,115 @@
+1. Using Iteration
+This method uses a simple loop to calculate the factorial. It is simple and easy to understand.
+
+
+
+
+
+function fact(n) {
+    let res = 1;
+    for (let i = 1; i <= n; i++) {
+        res *= i;
+    }
+    return res;
+}
+console.log(fact(5));
+Output
+
+120
+
+We use a loop to multiply numbers from 1 to n. The result variable accumulates the product.
+
+2. Using Recursion
+The recursion involves a function that calls itself until it reaches a base condition. It is elegant but can be less efficient for large numbers.
+
+
+
+
+
+function fact(n) {
+    if (n === 0 || n === 1) {
+        return 1;
+    }
+    return n * fact(n - 1);
+}
+console.log(fact(5));
+Output
+
+120
+
+factorial
+The function calls itself with a decremented value of until it reaches the base case and then at last returns the final value from it.
+
+3. Using a While Loop
+This method uses a while loop to repeatedly multiply numbers. It is similar to iteration but offers a different looping structure.
+
+
+
+
+
+function fact(n) {
+    let res = 1;
+    while (n > 1) {
+        res *= n;
+        n--;
+    }
+    return res;
+}
+console.log(fact(5));
+Output
+
+120
+
+The while loop repeatedly multiplies result by n and decrements n until it reaches 1.
+
+4. Using Memoization
+Memoization stores previously calculated results, improving efficiency for repeated calls. It uses a closure for caching.
+
+
+
+
+
+const fact = (function () {
+    const cache = {};
+    return function facto(n) {
+        if (n === 0 || n === 1) {
+            return 1;
+        }
+        if (cache[n]) {
+            console.log("value from caeche")
+            return cache[n];
+        }
+        cache[n] = n * facto(n - 1);
+        return cache[n];
+    };
+})();
+console.log(fact(5))
+Output
+
+120
+
+This code defines a self-invoking function that returns a facto function, which calculates the factorial of a number while using caching for efficiency.
+The cache object stores previously calculated results to avoid redundant computations.
+If the input number is already in the cache, it retrieves the value; otherwise, it calculates the factorial recursively.
+5. Using Functional Programming
+This approach uses array methods and functional programming paradigms. It is concise and elegant.
+
+
+
+
+
+const fact = (n) =>
+    n === 0 || n === 1
+        ? 1
+        : Array.from({ length: n }, (_, i) => i + 1).reduce(
+            (acc, num) => acc * num,
+            1
+        );
+console.log(fact(5));
+Output
+
+120
+
+This code defines a function fact using an arrow function to calculate the factorial of a number.
+It uses a ternary operator to return 1 for inputs 0 or 1.
+For other numbers, it creates an array of numbers from 1 to n and uses the reduce method to compute the product.

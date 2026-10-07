@@ -1,0 +1,339 @@
+Repositories and Commands in Git
+
+comments
+A Git repository (or repo) is a storage space where your project’s files and their complete history of changes are kept. It allows you to track, manage, and collaborate on code over time.
+
+Stores all files, branches, commits, and history of a project.
+Allows version control, so you can go back to any previous state of your project.
+Supports collaboration, enabling multiple developers to work together without overwriting each other’s changes.
+Can be cloned to create copies on different machines.
+What-is-Git-repository
+Git Repository
+Types of Git Repositories
+1. Local Repository
+Stored on your own computer.
+Allows you to make changes, commit them, and review your project history without needing an internet connection.
+Example: The .git folder inside your project contains the local repository.
+2. Remote Repository
+Hosted on a server like GitHub, GitLab, or Bitbucket.
+Enables multiple developers to collaborate on the same project.
+Supports operations like push, pull, and fetch to synchronize changes with the local repository.
+Types of Repositories based on Structure
+Bare vs Non-Bare Repositories
+Bare Repository	Non-Bare Repository
+Contains only the version history and Git data, no working files.	Contains working files along with the Git history.
+Mainly used on servers for collaboration.	Used on local machines for development.
+Cannot directly edit files; only supports Git operations like push and fetch.	Files can be edited directly; supports all Git operations including commit and merge.
+Usually ends with .git extension.	Does not usually end with .git extension.
+Acts as a central repository for multiple developers.	Acts as a local copy for development and testing.
+Initialize a Git Repository
+Before you can start tracking files, you need to initialize a repository in your project folder. This is done with the git init command.
+
+$ git init
+Syntax And Usage Of 
+
+$ git add file_name
+The following are the different ways to use add command:
+
+To add all the working area files in the current repository to the staging Area following command is used:
+$ git add .
+Adds all changes (new, modified, and deleted files) to the staging area.
+$ git add --all
+To add all files with extension .txt of the current directory to a staging area.
+$ git add *.txt
+To add all text files with .txt extension of the docs directory to staging area.
+$ git add docs/*.txt
+To add all text files of a particular directory(docs) to staging area.
+$ git add docs/
+To add all files in a particular directory(docs) to staging area.
+git add "*.txt"
+Moving From Staging Area To Commit Area In A Git Repository
+Committing changes from the Index Committing process is done in the staging area on the files which are added to the Index after git add command is executed. This committing process is done by the use of git commit command.
+
+Syntax And Usage Of 
+
+$ git commit -m "Add existing file"
+This commit command is used to add any of the tracked files to staging area and commit them by providing a message to remember. 
+
+working_area
+Cloning And Synchronizing With Remote Repositories
+Git lets users clone repositories to their local machine, creating separate copies. To sync changes with others, Git provides commands to synchronize local repositories with remote one.
+
+push
+pull
+Git Push And Pull Commands
+Git Push
+This git push command is used to push all the commits of the current repository to the tracked remote repository. This command can be used to push your repository to multiple repositories at once.
+
+Syntax
+
+$ git push -u origin master
+To push all the contents of our local repository that belong to the master branch to the server (Global repository).   
+
+Git Pull
+The git pull command updates your local repository by fetching and merging changes from the remote repository. It ensures your copy stays synchronized when others have made updates.
+
+Syntax
+
+$ git pull
+Additional Git Commands
+Here are some more git commands that you might use when working on a project:
+
+Git Status
+It is used for checking the status of git repository, i.e., if the files are committed or not, files in staging area or untracked file.
+
+Syntax
+
+$ git status
+Git Log
+It is used to track all the changes made in the repository, providing the information on contributors and their contributions.
+
+Syntax
+
+$ git log
+.gitignore
+You may use .gitignore if you want to hide any file when uploading online. Just simply create a .gitignore file, and write all the files names you want to ignore.
+
+Git Merge
+It is used to merge two branches within the same repository. It combines the changes from one branch into another (usually merging a feature branch into the main branch) without losing history.
+
+Syntax
+
+$ git merge <branch-name>
+Git Checkout
+Git checkout is a command used to switch between branches or view a previous version of your project by moving the HEAD pointer to a different commit. It does not permanently rollback your project-it simply allows you to explore or temporarily switch to an older commit using its hash from git log.
+
+Syntax
+
+$ git checkout <hash-code>
+
+
+
+HTML5 Introduction
+
+comments
+HTML5 is the fifth version of Hypertext Markup Language (HTML), a standard language used to structure webpages. It defines how content on a webpage should be structured and displayed. Here are some key points of HTML5.
+
+Provides multimedia support by embedding audio and video without plugins.
+Adds new form controls like date and email input types.
+Enables web storage to store data offline for better performance.
+Uses semantic elements such as <header> and <footer> for clearer structure.
+Delivers improved performance, especially on mobile devices.
+HTML5.webpHTML5.webp
+html-4.webphtml-4.webp
+
+
+
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML Page</title>
+​
+</head>
+<body>
+​
+    <header>
+        <h1>Hello, World!</h1>
+    </header>
+​
+    <main>
+        <p>This is a simple HTML5 page.</p>
+    </main>
+​
+    <footer>
+        <p>@GeeksforGeeks, Sanchhaya Education Private Limited, All rights reserved</p>
+    </footer>
+​
+</body>
+</html>
+It defines a simple HTML5 page with DOCTYPE, <html>, <head>, and <body> tags.
+Includes a character set (UTF-8) and viewport settings for mobile responsiveness.
+Contains a header, main content, and footer with basic text content.
+New Added Elements in HTML 5
+HTML5 introduced several new elements that help structure a webpage better and make it more interactive. These elements not only improve the design but also make the code more readable and accessible. Here are some key elements of HTML5:
+
+<article>: The <article> tag represents independent, self-contained content like articles or posts.
+<aside>: The <aside> tag holds secondary or related information supporting the main content.
+<figcaption>: The <figcaption> tag provides a caption or description for a <figure> element.
+<figure>: The <figure> tag groups self-contained media such as images, diagrams, or code.
+<header>: The <header> tag contains introductory content like headings or navigation links.
+<footer>: The <footer> tag includes closing content such as author info or copyright notes.
+<main>: The <main> tag defines the central, most important content of the webpage.
+<mark>: The <mark> tag highlights or emphasizes specific text.
+<nav>: The <nav> tag groups navigation links for moving around the site.
+<section>: The <section> tag organizes related content into thematic blocks.
+<details>: The <details> tag creates expandable or collapsible content sections.
+<summary>: The <summary> tag provides the clickable heading for a <details> element.
+<time>: The <time> tag represents dates or times in a readable and machine-usable format.
+<bdi>: The <bdi> tag isolates text with unknown or mixed text direction.
+<wbr>: The <wbr> tag adds an optional line-break position in long words.
+<datalist>: The <datalist> tag provides autocomplete suggestions for an <input> element.
+<keygen>: The <keygen> tag generates key pairs for secure authentication (deprecated).
+<output>: The <output> tag displays results of calculations or script actions.
+<progress>: The <progress> tag visually represents the progress of a task.
+<svg>: The <svg> tag embeds scalable vector graphics into a webpage.
+<canvas>: The <canvas> tag draws dynamic graphics using JavaScript.
+<audio>: The <audio> tag embeds audio content like music or sound effects.
+<embed>: The <embed> tag inserts external resources such as media players or apps.
+<source>: The <source> tag defines media sources for <audio> and <video> elements.
+<track>:The <track> tag provides captions or subtitles for videos.
+<video>: The <video> tag embeds video content directly into a webpage.
+Deprecated Elements in HTML5
+HTML5 has removed several outdated elements, replacing them with newer, more flexible solutions:
+
+The <acronym> tag is removed; use <abbr>.
+The <applet> tag is outdated; use <object>.
+The <basefont> tag is removed; use CSS for font styling.
+The <big> tag is removed; use CSS font-size.
+The <center> tag is not supported; use CSS text-align.
+The <dir> tag is removed; use <ul>.
+The <font> tag is removed; use CSS for all text styling.
+The <frame>, <frameset>, and <noframes> tags are removed with no replacements.
+The <isindex> tag is removed and no longer needed.
+The <strike> tag is removed; use CSS, <s>, or <del>.
+The <tt> tag is removed; use CSS or <code> for monospace text.
+HTML5 Advantages
+HTML5 offers several benefits that enhance modern web development like:
+
+Works on all major browsers and devices (cross-platform).
+Lets websites access user location (geolocation).
+Supports offline use through Web Storage or AppCache.
+Uses semantic tags for cleaner, simpler code.
+Optimized for smooth performance on mobile devices.
+HTML5 Disadvantages
+Despite its strengths, HTML5 comes with some drawbacks:
+
+Older browsers may not support all HTML5 features (browser inconsistencies).
+Some older mobile devices struggle with HTML5 (mobile compatibility issues).
+Web Storage and similar features can pose security risks if misused.
+Advanced APIs introduce complexity for beginners.
+IE 8 and below show poor support for HTML5.
+Example of HTML5
+Here are demonstration of some HTM5 elements:
+
+Adding a Video Using the <video> Tag
+
+
+
+
+<html>
+<body>
+    <video width="320" height="100" controls>
+        <source src="movie.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</body>
+</html>
+The <video> tag is used to embed a video in the HTML page.
+The controls attribute adds play, pause, and volume control buttons.
+The <source> tag specifies the video file and format. If the video is not supported, the text inside the <video> tag will be displayed.
+Using the <canvas> Element for Drawing
+
+
+
+
+<html>
+<body>
+    <canvas id="myCanvas" width="100" height="100"></canvas>
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle = "blue";
+        ctx.fillRect(50, 50, 100, 100);
+    </script>
+</body>
+</html>
+The <canvas> tag is used to create an area for drawing graphics using JavaScript.
+The getContext(“2d”) method is used to set up a 2D drawing context on the canvas.
+The fillRect method draws a blue rectangle within the canvas.
+Using the <progress> Element to Show Task Progress
+
+
+
+
+<html>
+<body>
+    <h1>HTML5 Progress Bar Example</h1>
+    <progress value="70" max="100"></progress>
+</body>
+</html>
+The <progress> tag is used to display a progress bar on the webpage.
+The value attribute sets the current progress, and the max attribute defines the maximum value.
+Best Practices of Using HTML5
+Use Semantic Tags: Improve SEO and accessibility by using tags like <header>, <footer>, <article>, and <section>.
+Ensure Cross-Browser Compatibility: Test your code across multiple browsers, especially older versions.
+Use <meta charset=”UTF-8″>: Always specify the character encoding at the start to avoid encoding issues.
+Mobile Responsiveness: Use the <meta name=”viewport” content=”width=device-width, initial-scale=1.0″> tag for mobile-friendly designs.
+
+
+First Web Page Printing Hello World
+
+comments
+So far, we have already learned about the structure of an HTML document, tags, etc in the previous module. Let us use this knowledge to create our first web page.
+
+Here, we are creating a simple webpage that displays a "Hello World" message as the perfect starting point. This exercise will help you understand the foundational structure of HTML and introduce you to headings from <h1> to <h6>.
+
+Why Start with "Hello World"?
+"Hello World" is the first step in programming across many languages. By displaying this simple message, you’ll learn how to structure an HTML document and see how headings affect the organization and readability of content on a webpage.
+
+Steps to Create Your First "Hello World" Web Page
+Here’s how to build your first webpage in HTML, step-by-step.
+
+Step 1: Open a Text Editor
+To create HTML, you need a text editor. You can use:
+
+Notepad (Windows)
+TextEdit (Mac)
+Or a code editor like VS Code, Sublime Text, or Atom.
+Step 2: Write the HTML Code
+In your text editor, create a file named index.html and write the following HTML code. This code will display "Hello World".
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+​
+<head>
+    <title>First Web Page</title>
+</head>
+​
+<body>
+    Hello World!
+</body>
+​
+</html>
+In this Example:
+
+The <!DOCTYPE html> declaration specifies that the document is an HTML5 document.
+The <html> element encloses the entire HTML content.
+The <head> section contains metadata, including the <title>, which sets the page's title as "First Web Page."
+The <body> section includes the text "Hello World!", which will be displayed on the webpage.
+Heading Tags: There are six levels of headings defined by HTML. These six heading elements are h1, h2, h3, h4, h5, and h6; with h1 being the highest level and h6 the least.
+
+Let us use these six different Heading tags separately to print "Hello World!" and see the difference. Modify your code in index.html with the below code: 
+
+Code: index.html
+
+
+
+
+
+<html>
+<body>
+    <h1>Hello World!</h1>
+    <h2>Hello World!</h2>
+    <h3>Hello World!</h3>
+    <h4>Hello World!</h4>
+    <h5>Hello World!</h5>
+    <h6>Hello World!</h6>
+</body>
+</html>
+The code displays "Hello World!" in six different sizes using heading tags <h1> to <h6>.
+<h1> is the largest and most emphasized heading, while <h6> is the smallest and least emphasized.
+To learn more about Heading Tags, Please refer: HTML | Heading.
+
+

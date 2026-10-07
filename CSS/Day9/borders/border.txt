@@ -1,0 +1,92 @@
+CSS Border Properties
+CSS provides several properties to control and customize borders:
+
+border-style: Type of border is determined by border-style, such as solid, dashed, or dotted.
+border-width: Width of the border is set using border-width, in pixels, points, or other units.
+border-color: Color of the border is specified using border-color.
+border-radius: Rounded corners are created using border-radius.
+
+Ways to Style Border in CSS
+The CSS border property enables the styling of an element's border by setting its width, style, and color, allowing for customizable visual boundaries in web design.
+
+1. Border Style
+CSS border-top style Property
+border-right-style Property
+border-bottom-style Property
+border-left-style Property
+2. Border Width
+border-top-width Property
+border-right-width Property
+border-bottom-width Property
+border-left-width Property
+3. Border Color
+border-top-color Property
+border-right-color Property
+border-bottom-color Property
+border-left-color Property
+4. Border individual sides
+CSS allows you to style each side of a border individually, giving flexibility in design.
+
+5. Border Radius Property
+The border-radius property allows you to round the corners of an element, creating smoother edges.
+
+Common Border Styles
+The border-style property specifies the type of border. None of the other border properties will work without setting the border style.  
+
+Border Style	Description
+Dotted	Creates a series of dots.
+Dashed	Forms a dashed line.
+Solid	Produces a continuous line.
+Double	Renders two parallel lines.
+Groove	Creates 3D grooved effect.
+Ridge	Creates 3D ridged effect.
+Inset	Adds 3D inset border.
+Outset	Adds 3D outset border.
+None	Removes the border.
+Hidden	Hides the border.
+
+CSS Border Width
+CSS border-width is used to define the thickness of the border around an element. It can be specified in various units like px, pt, cm, or by using predefined values like thin, medium, and thick.
+
+
+<html>
+<head>
+    <style>
+        p {
+            border-style: solid;
+            border-width: 8px;
+        }
+    </style>
+</head>
+<body>
+    <p>CSS Border Width</p>
+</body>
+</html>
+border-width property is used to set the thickness of the border.
+You can use numeric values (e.g., 1px, 5pt, 2cm) or keywords (thin, medium, thick) to set the border width.
+The border-style and border-color properties must be used in conjunction with border-width to see the effect.
+
+CSS Border Color
+CSS border-color is used to define the color of the border. You can set the color using color names, hexadecimal values, or RGB values. If no color is specified, the border will inherit the color of the element itself.
+
+
+
+
+
+<html>
+<head>
+    <style>
+        p {
+            border-style: solid;
+            border-color: red
+        }
+    </style>
+</head>
+<body>
+    <p>CSS Border color</p>
+</body>
+</html>
+border-color property is used to set the color of the element's border.
+the border color is set to red using the color name red. You can also use hex codes like #ff0000 or RGB values like rgb(255, 0, 0).
+The border-style property must be defined (e.g., solid, dashed, etc.) for the border color to be visible.
+

@@ -1,0 +1,141 @@
+Control flow statements in JavaScript determine the order in which code executes. They let developers make decisions, repeat tasks, and control program flow using constructs like if, else, switch, for, while, and do...while loops. This article demonstrates these concepts with practical examples.
+
+1. Categorize a Score into Grades
+In this example, we use if-else if-else to check a student's score and categorize it into a grade. This demonstrates how to evaluate multiple conditions and perform branching logic.
+
+Problem:
+Write a program that takes a score (0-100) and categorizes it into grades.
+
+Solution:
+
+
+
+
+function categorizeGrade(score) {
+    if (score >= 90) {
+        console.log("Grade: A");
+    } else if (score >= 80) {
+        console.log("Grade: B");
+    } else if (score >= 70) {
+        console.log("Grade: C");
+    } else {
+        console.log("Grade: D");
+    }
+}
+​
+// Test the function
+categorizeGrade(85);  
+categorizeGrade(92);  
+categorizeGrade(75);
+Explanation:
+
+The program uses an if-else if-else statement to categorize the score into grades:
+
+A score of 90 or more results in grade "A".
+A score between 80 and 89 results in grade "B".
+A score between 70 and 79 results in grade "C".
+Any score below 70 results in grade "D".
+2. Identify Weekday or Weekend
+This example uses a switch statement to handle a set of fixed options—whether a given day is a weekday or a weekend day. The switch statement is ideal for matching a value against multiple options.
+
+Problem:
+Write a program that takes a day name (e.g., "Monday", "Saturday") and prints whether it's a weekday or weekend.
+
+Solution:
+
+
+
+
+function checkDay(day) {
+    switch (day) {
+        case "Sunday":
+            console.log("Weekend");
+            break;
+        default:
+            console.log("Weekday");
+    }
+}
+​
+// Test the function
+checkDay("Monday");   
+checkDay("Sunday");
+Explanation:
+
+The program checks the value of the day variable:
+
+If the day is "Sunday", it prints "Weekend".
+For any other day, it defaults to printing "Weekday".
+3. Factorial of a Number
+This problem uses a for loop to calculate the Factorial of a numbers. It's a great way to practice looping over a sequence and performing arithmetic.
+
+Problem:
+Write a program that calculates the factorial of a number provided by the user.
+
+Solution:
+
+
+
+
+function factorial(n) {
+    let result = 1;
+    for (let i = 1; i <= n; i++) {
+        result *= i;
+    }
+    return result;
+}
+​
+// Example usage:
+console.log(factorial(5));  
+console.log(factorial(0));  
+console.log(factorial(1));
+Explanation:
+
+The program prompts the user for a non-negative integer N.
+If the input is invalid (negative or not a number), it displays an error message.
+Otherwise, it calculates the factorial by multiplying all integers from 1 to NN using a for loop.
+Finally, it prints the factorial result to the console.
+4. Find All Prime Numbers Between 1 and 20
+In this example, we use a while loop to iterate over the numbers from 1 to 100 and check if each number is prime. The while loop is ideal for iterating until a condition is met, especially when you don't know beforehand how many iterations will be needed.
+
+Problem:
+Write a program that finds all prime numbers between 1 and 20 using a while loop.
+
+Solution:
+
+
+
+
+function findPrimes() {
+    
+    // Starting from the first prime number
+    let num = 2; 
+    while (num <= 20) {
+        let isPrime = true;
+        for (let i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i === 0) {
+                isPrime = false;
+                break;
+            }
+        }
+        if (isPrime) {
+            console.log(num);
+        }
+        num++;
+    }
+}
+​
+// Test the function
+findPrimes();
+Explanation:
+
+The while loop starts at 2 and checks every number up to 20.
+For each number, the for loop checks if it's divisible by any number other than 1 and itself. If a number is not divisible by any other number, it's prime, and the program prints it.
+The program continues until it checks all numbers up to 20.
+
+
+
+let score = 85;
+let grade = score >= 90 ? "A" : score >= 80 ? "B" : "C";
+console.log(grade);
+
+print B

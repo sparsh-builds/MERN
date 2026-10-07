@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            height: 20px;
+            width: 20px;
+            box-sizing: content-box;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-left: 5px solid red;
+            border-right: 5px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div>Hello GFG</div>
+    
+</body>
+</html>
+
+<!--This code will create a box model with a border line width of 0.4px always and border-area of 1.6px and padding area as 20px width on both sides of the content area.
+
+Screenshot-2024-12-10-121925
+Content Area (Width) :The width of the content area is fixed at 200px.
+
+Padding
+
+Padding adds extra space inside the element, around the content.
+Padding Left: 20px
+Padding Right: 20px
+Total padding width: 20px + 20px = 40px
+Border
+
+The border, being solid, has a width, but it is calculated differently from the padding.
+Line Width of Border: 0.4px (the width of the line itself)
+Area of Border: 1.6px (the actual space the border occupies visually)
+Border width for both sides: 1.6px (left) + 1.6px (right) = 3.2px
+Total Width
+
+Total width of the element can be calculated by adding the padding and border areas to the content area width.
+Formula for Total Width = (Padding-Left + Padding-Right + Border-Area-Left + Border-Area-Right) + Content Area Width
+Total Width = (20px + 20px + 1.6px + 1.6px) + 200px = 243.2px
+The total width of the element becomes 243.2px.
+The reason the total width is increased unexpectedly is because box-sizing: content-box applies the width to the content area only .The padding and border are added outside the content area, leading to an increase in the overall width and height of the element.-->
+

@@ -1,0 +1,38 @@
+Viewport meta tag for Responsive Web Design
+
+comments
+The viewport meta tag controls how a web page is displayed and scaled on different devices. It is an essential part of responsive web design for mobile-friendly websites.
+
+Helps create responsive layouts for various screen sizes.
+Controls the page's width and zoom level on devices.
+Improves readability and user experience on mobile screens.
+Syntax:
+
+<meta name="viewport" content= "width=device-width, initial-scale=1.0"> 
+The ' width=device-width ' in meta tag sets the width of the page to follow the screen width of the device, which will vary depending on the device.
+The ' initial-scale=1.0 ' in meta tag sets the initial zoom level when the page is first loaded by the browser.
+Note: The viewport meta tag controls page width and scaling on different devices, ensuring responsive web design. It was first introduced by Apple Inc. for Safari on iOS.
+
+Attributes
+A Responsive tag has the following attributes:
+
+width : Specifies the width of the virtual viewport on the device.
+height : Specifies the height of the virtual viewport on the device.
+initial-scale : Sets the initial zoom level when the page is first loaded.
+minimum-scale : Defines the minimum zoom level allowed for the page.
+maximum-scale : Defines the maximum zoom level allowed for the page.
+user-scalable : Determines whether users can zoom in or out of the page (yes or no).
+Example: The laptop screen is wider without the viewport meta tag.
+
+
+
+Example: The screen is responsive with the viewport meta tag .On smartphones the page is adjusted due to narrower screen
+
+
+
+width=device-width : Sets the viewport width to match the device's screen width in CSS pixels.
+width=600 : Sets the viewport to a fixed width of 600 CSS pixels.
+initial-scale=1.0 : Sets the initial zoom level to 100% when the page first loads.
+width : Controls the size of the viewport displayed on the device.
+initial-scale : Controls the zoom level when the page is loaded for the first time.
+width=device-width, initial-scale=1.0 : The most commonly used viewport setting for mobile-friendly and responsive websites.

@@ -1,0 +1,274 @@
+Responsive utility classes in Bootstrap
+
+comments
+The responsive utility classes help to build responsive web designs easily. You can hide or display the content of your choice on the web page. You have to define the size of the screen for which you are hiding or displaying the content. 
+
+Responsive utility classes are defined for five different types of sizes:
+xs: It denotes the extra small-sized screen, whose width will be less than 576px.
+sm: The small size screen with a width greater than or equal to 576px.
+md: It denotes a medium-sized screen with a width greater than or equal to 768px.
+lg: Large devices of width greater than or equal to 992px.
+xl: The Extra large devices with a width greater than or equal to 1200px.
+Here's the list of responsive utility classes:
+.d-none: This class is used to hide the content on all the different screen-sized devices.
+.d-none .d-sm-block: This class is used to hide the content only on Extra small devices.
+.d-sm-none .d-md-block: This class is used to hide the content only on small devices.
+.d-md-none .d-lg-block: This class is used to hide the content only on medium-sized devices.
+.d-lg-none .d-xl-block: This class is used to hide the content only on large devices.
+.d-xl-none .d-xxl-block: This class is used to hide the content only on extra-large devices.
+.d-block: This class is used to display the content on all the different screen-sized devices.
+.d-block .d-sm-none: This class is used to display the content only on Extra small devices.
+
+.d-block .d-sm-none: This class is used to display the content only on Extra small devices.
+.d-none .d-sm-block .d-md-none: This class is used to display the content only on small devices.
+.d-none .d-md-block .d-lg-none: This class is used to display the content only on medium-sized devices.
+.d-none .d-lg-block .d-xl-none: This class is used to display the content only on large devices.
+.d-none .d-xl-block .d-xxl-none: This class is used to display the content only on extra-large devices.
+// Visible only for small size devices
+<div class=".d-none .d-sm-block .d-md-none">
+
+    // Hidden only for medium size devices
+    <div class=".d-md-none .d-lg-block">
+        <!---content of div tag--->
+    </div>
+</div>
+The examples below demonstrate the use of responsive utility classes:
+
+Example 1:
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+​
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" 
+        content="IE=edge" />
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0" />
+​
+    <!-- Bootstrap cdn to link the bootstrap
+        with HTML document -->
+    <link href=
+"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity=
+"sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+        crossorigin="anonymous" />
+​
+    <style>
+        .green {
+            background-color: green;
+            color: white;
+            border: 2px solid black;
+        }
+    </style>
+​
+    <title>Responsive utility classes in Bootstrap</title>
+</head>
+​
+<body>
+    <div class="container">
+        <div class="row">
+            <span class="col d-md-block green"> 
+                Text 1 of first container 
+            </span>
+            <span class="col d-md-none"> 
+                Text 2 of first container 
+            </span>
+            <span class="col d-md-block green"> 
+                Text 3 of first container 
+            </span>
+        </div>
+​
+        <div class="row">
+            <span class="col d-md-none"> 
+                Text 1 of second container 
+            </span>
+            <span class="col d-md-block green"> 
+                Text 2 of second container 
+            </span>
+            <span class="col d-md-none"> 
+                Text 3 of second container 
+            </span>
+        </div>
+    </div>
+​
+    <!-- Bootstrap jQuery link -->
+    <script src=
+"https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity=
+"sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous">
+    </script>
+    
+    <script src=
+"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity=
+"sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous">
+    </script>
+</body>
+​
+</html>
+
+
+
+
+Example 2:
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap cdn to link the bootstrap 
+            with HTML document -->
+    <link href=
+"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+         rel="stylesheet" integrity=
+"sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+        crossorigin="anonymous" />
+
+    <style>
+        .green {
+            background-color: green;
+            color: white;
+            border: 2px solid black;
+        }
+    </style>
+
+    <title>Responsive utility classes in Bootstrap</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <span class="col d-sm-none green"> 
+                Text 1 of first container 
+            </span>
+            <span class="col d-sm-block"> 
+                Text 2 of first container 
+            </span>
+            <span class="col d-sm-none green"> 
+                Text 3 of first container 
+            </span>
+        </div>
+
+        <div class="row">
+            <span class="col d-sm-block"> 
+                Text 1 of second container 
+            </span>
+            <span class="col d-sm-none green"> 
+                Text 2 of second container 
+            </span>
+            <span class="col d-sm-block"> 
+                Text 3 of second container 
+            </span>
+        </div>
+    </div>
+
+    <!-- Bootstrap jQuery link -->
+    <script src=
+"https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity=
+"sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous">
+    </script>
+    
+    <script src=
+"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity=
+"sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+​
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0" />
+​
+    <!-- Bootstrap cdn to link the bootstrap 
+            with HTML document -->
+    <link href=
+"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+         rel="stylesheet" integrity=
+"sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+        crossorigin="anonymous" />
+​
+    <style>
+        .green {
+            background-color: green;
+            color: white;
+            border: 2px solid black;
+        }
+    </style>
+​
+    <title>Responsive utility classes in Bootstrap</title>
+</head>
+​
+<body>
+    <div class="container">
+        <div class="row">
+            <span class="col d-sm-none green"> 
+                Text 1 of first container 
+            </span>
+            <span class="col d-sm-block"> 
+                Text 2 of first container 
+            </span>
+            <span class="col d-sm-none green"> 
+                Text 3 of first container 
+            </span>
+        </div>
+​
+        <div class="row">
+            <span class="col d-sm-block"> 
+                Text 1 of second container 
+            </span>
+            <span class="col d-sm-none green"> 
+                Text 2 of second container 
+            </span>
+            <span class="col d-sm-block"> 
+                Text 3 of second container 
+            </span>
+        </div>
+    </div>
+​
+    <!-- Bootstrap jQuery link -->
+    <script src=
+"https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity=
+"sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous">
+    </script>
+    
+    <script src=
+"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity=
+"sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous">
+    </script>
+</body>
+​
+</html>
+
+
+
+
+
+

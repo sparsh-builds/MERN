@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+</head>
+<body>
+    <h1>Customer Survey Form</h1>
+    <p>Please take a moment to complete this survey and share your feedback with us.</p>
+
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="1" max="120"><br>
+
+            <label for="color">Favorite Color:</label>
+        <select id="color" name="color">
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="yellow">Yellow</option>
+        </select><br><br>
+
+            <label>Gender:</label>
+<input type="radio" name="gender"> Male
+<input type="radio" name="gender"> Female
+<input type="radio" name="gender"> Others
+<br>
+
+            <label for="feedback">Your Feedback:</label><br>
+    <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea><br><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
+
+
+    <h2>Survey Responses</h2>
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Favorite Color</th>
+        <th>Feedback</th>
+    </tr>
+    <tr>
+        <td>Alice</td>
+        <td>30</td>
+        <td>Blue</td>
+        <td>Great service! Keep it up.</td>
+    </tr>
+    <tr>
+        <td>Bob</td>
+        <td>25</td>
+        <td>Green</td>
+        <td>Would love to see more options.</td>
+    </tr>
+</table>
+
+
+
+    <h3>Instructions:</h3>
+<ul>
+    <li>Fill in your name and age in the first two fields.</li>
+    <li>Select your favorite color from the dropdown list.</li>
+    <li>Provide your feedback in the text box below.</li>
+    <li>Click the "Submit" button to submit your responses.</li>
+</ul>
+
+
+</body>
+</html>

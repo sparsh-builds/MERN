@@ -1,0 +1,157 @@
+Bootstrap 5 Flex
+
+comments
+Bootstrap 5 Flex offers utility classes for creating flexible layouts using Flexbox, ensuring responsiveness across screen sizes. To start, wrap desired elements in a flex container with classes like .container or .row. Then, use flex utility classes to control item layout.
+
+Aspect	Description
+Flex Direction	Controls flex item arrangement direction. The default is a row for horizontal alignment.
+Justify Content	Align flex items along the main axis: flex-start, center, flex-end, space-around, or space-between.
+Align Items	Changes flex item alignment on the cross-axis (vertical/horizontal depending on flex-direction).
+Align Self	Adjusts single flex item alignment on the cross-axis, independently from others in the container.
+Fill	Forces flex items into equal widths while utilizing all available horizontal space.
+Grow and Shrink	Determines flex item growth and shrinkage relative to others in container based on available space.
+Auto Margins	Utility classes for adding auto margins to flex items, aiding in various layout alignments.
+Wrap	Alters how flex items wrap in container: no wrap, wrap, or wrap in reverse direction.
+Order	Changes visual order of specific flex items using integer values, altering item sequencing.
+Align Content	Controls flex item alignment on cross-axis in multiline flex containers.
+Media Object	Combines .media and .media-body classes for consistent alignment of media objects with content.
+Sass	Software as a service (SaaS) for building responsive web apps using Bootstrap 5.
+Syntax:
+
+<div class="d-flex p-2 ">
+    ....
+</div>
+Using Justify content:
+justify-content in Bootstrap 5 Flex is a property that aligns flex items along the main axis. It controls how the space is distributed between and around flex items, allowing for various alignments like center, start, end, space-between, and more.
+
+Syntax:
+
+<div class="d-flex justify-content-center">
+    ...
+</div>
+Example: In this example, we have a container with a flex container inside it. The flex container has three flex items, each with a different background color. We're using the "justify-content-center" and "align-items-center" classes to center the flex items both horizontally and vertically within the flex container.
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+​
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" 
+          content="width=device-width, 
+                initial-scale=1.0" />
+    <title>Bootstrap 5 Flex Example</title>
+    <link rel="stylesheet" 
+          href=
+"https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css" />
+</head>
+​
+<body>
+    <div class="container">
+        <h1 class="text-center my-5">
+            Bootstrap 5 Flex Example
+        </h1>
+        <div class="d-flex flex-row bd-highlight 
+                    mb-3 justify-content-center 
+                    align-items-center">
+            <div class="p-3 bg-primary text-white">
+                Flex Item 1
+            </div>
+            <div class="p-3 bg-secondary text-white">
+                Flex Item 2
+            </div>
+            <div class="p-3 bg-success text-white">
+                Flex Item 3
+            </div>
+        </div>
+    </div>
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.bundle.min.js">
+​
+    </script>
+</body>
+​
+</html>
+
+
+Output:
+
+Bootstrap 5 Flex
+
+Using Direction:
+In Bootstrap 5 Flex, flex-direction is a property that determines the direction in which flex items are laid out. It allows for both horizontal (row) and vertical (column) orientations.
+
+Syntax:
+
+<div class="d-flex flex-column">
+    ...
+</div>
+<div class="d-flex flex-column-reverse">
+    ...
+</div>
+Example: In this example, we are using flex-column to set our items (1,2, and 3) in the vertical direction and we use flex-column-reverse to set the item(4,5 and 6) vertically from the opposite side.
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+​
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, 
+                initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" 
+          href=
+"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <title>Bootstrap 5 Flex Column Example</title>
+</head>
+​
+<body>
+    <div class="container p-5">
+        <div class="d-flex flex-column">
+            <div class="p-2 bg-primary 
+                        text-white">
+                Item 1
+            </div>
+            <div class="p-2 bg-secondary 
+                        text-white">
+                Item 2
+            </div>
+            <div class="p-2 bg-success 
+                        text-white">
+                Item 3
+            </div>
+        </div>
+        <br>
+        <div class="d-flex flex-column-reverse">
+            <div class="p-2 bg-primary 
+                        text-white">
+​
+                Item 4
+            </div>
+            <div class="p-2 bg-secondary 
+                        text-white">
+                Item 5
+            </div>
+            <div class="p-2 bg-success 
+                        text-white">
+                Item 6
+            </div>
+        </div>
+    </div>
+​
+    <!-- Bootstrap JS -->
+    <script src=
+"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+    </script>
+</body>
+​
+</html>
+Output:

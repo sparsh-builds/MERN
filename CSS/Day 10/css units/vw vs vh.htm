@@ -1,0 +1,56 @@
+<!-- Example 2:  Viewport Width (vw) and Viewport Height (vh)
+Another type of relative width is called view width (vw) and view height (vh).  1vw equals one percent of the entire screen size so 100 vw would take up the entire width and 50vw obviously would take up half the width but the important thing about vw versus percentages is that viewport units are based on the entire screen size while percentages are relative to their parent. 
+ -->
+
+
+ <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <style>
+        .box {
+            background: red;
+            border: 1px solid black;
+            margin: 10px;
+        }
+
+        .parent {
+            background: white;
+            border: 1px solid black;
+        }
+
+        .fifty-percent {
+            width: 50%;
+        }
+
+        .fifty-vw {
+            width: 50vw;
+        }
+
+        .twenty-five-vh {
+            height: 25vh;
+        }
+
+        .parent {
+            width: 100px;
+            ;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Output-1 </h3>
+    <div class="box fifty-percent">50%</div>
+    <div class="box fifty-vw">50vw</div>
+    <div class="box twenty-five-vh">25vh</div>
+    <hr>
+    <h3>Output-2 </h3>
+    <div class="parent">
+        <div class="box fifty-percent">50%</div>
+        <div class="box fifty-vw">50vw</div>
+        <div class="box twenty-five-vh">25vh</div>
+    </div>
+</body>
+
+</html>

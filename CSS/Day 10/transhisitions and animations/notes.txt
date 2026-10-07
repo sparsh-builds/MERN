@@ -1,0 +1,41 @@
+CSS transitions are used to create smooth changes between two states of an element. This technique makes elements gradually change from one style to another when certain events occur, such as hovering over an element or changing a state via JavaScript.
+
+
+
+Key Concepts in CSS Transitions:
+transition-property: This defines which property or properties will undergo a transition. For instance, you might want to animate the change in background color, but not the size of an element.
+transition-duration: Specifies the duration of the transition, i.e., how long it takes for the change to occur. The time can be given in seconds ( s ) or milliseconds ( ms ).
+transition-timing-function: Determines the pacing of the transition. Common values include:
+ease : The transition starts slowly, speeds up, and then slows down.
+linear : The transition proceeds at a constant pace.
+ease-in , ease-out , ease-in-out : Variations in timing where the transition starts or ends more slowly.
+transition-delay: Defines a delay before the transition begins. This can be useful for adding a slight pause before the effect starts.
+
+.box { width: 100px; height: 100px; background-color: blue; transition: background-color 0.5s ease-in; } .box:hover { background-color: green; }
+In this example, when the user hovers over the .box element, its background color smoothly changes from blue to green over 0.5 seconds.
+
+CSS transitions are ideal for simpler effects that occur due to a change in state, like hovering, focusing, or even changes triggered by JavaScript.
+
+CSS Animations
+CSS animations are used to create more complex and continuous motion effects. With animations, you can define a sequence of changes over time, specifying keyframes that describe different points of the animation. This technique allows for more control than transitions and can include multiple steps, allowing for intricate and repeating animations.
+
+Key Concepts in CSS Animations:
+@keyframes Rule: This defines the steps of the animation. By using from and to or percentages, you can specify the different styles at various points during the animation. Example:
+
+@keyframes colorChange { from { background-color: blue; } to { background-color: green; } }
+animation-name: This property specifies the name of the @keyframes animation to be applied.
+animation-duration: Defines how long one cycle of the animation lasts, specified in seconds ( s ) or milliseconds ( ms ).
+animation-timing-function: Similar to the transition timing function, this controls how the intermediate keyframes are calculated, determining the pace of the animation.
+animation-delay: Specifies a delay before the animation starts.
+animation-iteration-count: Determines how many times the animation repeats. It can be set to a specific number or infinite for endless loops.
+animation-direction: This property defines whether the animation should alternate direction or play in a single direction (normal, reverse, alternate).
+animation-fill-mode: This defines how the element’s styles are applied before and after the animation. It can allow the element to retain its final state after the animation completes.
+animation-play-state: Controls whether the animation is running or paused.
+
+@keyframes moveBox { from { transform: translateX(0); } to { transform: translateX(200px); } } .box { width: 100px; height: 100px; background-color: blue; animation: moveBox 2s infinite; }
+Example:
+
+In this example, the .box element will move horizontally 200px from its original position and repeat the movement indefinitely every 2 seconds.
+
+CSS animations provide more flexibility for creating complex visual effects, with the ability to handle multiple keyframes, repeat animations, and define intricate timing. They're suitable for elements that need to animate continuously or at specific intervals.
+

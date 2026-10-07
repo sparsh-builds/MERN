@@ -1,0 +1,16 @@
+grid cols 3 -> grid with 3 colm 
+
+absolute positione d-> absolute 
+
+flex container-> flex
+
+padding 4 -> p-4
+
+text bold - fon bols 
+
+approach -> mobile firet 
+
+tailwind.config.js
+
+resp img w -h full auto 
+

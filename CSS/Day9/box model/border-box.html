@@ -1,0 +1,29 @@
+<html>
+<head>
+    <style>
+        div {
+            height: 20px;
+            width: 70px;
+            box-sizing:border-box;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-left: 2px solid red;
+            border-right: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div>Hello GFG</div>
+</body>
+</html>
+
+<!--This code creates a box model where the content width is adjusted to accommodate the padding and border thickness.
+
+Screenshot-2024-12-10-123433
+Width of Border and Padding Border width : 0.4px (line width) and 1.6px + 1.6px = 3.2px (total border area).
+Padding width : 20px + 20px = 40px.
+User-Entered Width : The width entered by the user is 200px, which applies to the content area only when box-sizing: content-box is used.
+With box-sizing: content-box: Padding and border are added outside the content, increasing the total width.
+Adjusting Content Area Width: To maintain a total width of 200px, the extra space added by padding and borders (43.2px) is subtracted from the content width.
+New content area width : 200px - 43.2px = 156.8px.
+Final Width Calculation : The final total width is: 156.8px (content area) + 40px (padding) + 3.2px (border) = 200px, ensuring the user’s entered width remains unchanged.-->

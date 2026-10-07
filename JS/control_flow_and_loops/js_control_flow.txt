@@ -1,0 +1,61 @@
+Control flow statements in JavaScript control the order in which code is executed. These statements allow you to make decisions, repeat tasks, and jump between parts of a program based on specific conditions.
+
+JavaScript if Statement
+The if statement executes a block of code only if a specified condition is true.
+
+const age = 18;
+if (age >= 18) {
+    console.log("You are an adult.");
+}
+
+const score = 40;
+if (score >= 50) {
+    console.log("You passed.");
+} else {
+    console.log("You failed.");
+}
+
+
+
+JavaScript Switch Statement
+The switch statement evaluates an expression and executes a block of code based on matching cases. It provides an alternative to long if-else chain.
+
+const day = "Monday";
+switch (day) {
+    case "Monday":
+        console.log("Start of the week.");
+        break;
+    case "Friday":
+        console.log("End of the workweek.");
+        break;
+    default:
+        console.log("It's a regular day.");
+}
+
+
+
+for (let i = 1; i <= 3; i++) {
+    console.log(i);
+}
+
+let i = 1;
+while (i <= 3) {
+    console.log(i);
+    i++;
+}
+
+3. JavaScript do...while Loop
+The do...while loop executes the block at least once, even if the condition is false.
+
+let i = 1;
+do {
+    console.log(i);
+    i++;
+} while (i <= 3);
+
+Ternary Operator or Conditional Operator
+In some programming languages, a ternary operator is used to assign a value to a variable based on a condition
+
+let a = 10;
+console.log(a === 5 ? "a is equal to 5" : "a is not equal to 5");
+

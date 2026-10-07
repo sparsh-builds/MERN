@@ -1,0 +1,78 @@
+action: Specifies the URL where the form data is sent upon submission.
+method: Defines the HTTP method used to send the data — either "get" or "post".
+target: Determines where to display the server’s response (e.g., "_blank", "_self", "_parent", "_top", or an iframe name).
+enctype: Specifies how form data is encoded when using method="post" (e.g., application/x-www-form-urlencoded, multipart/form-data, text/plain).
+autocomplete: Controls whether the browser should auto-fill form fields ("on" or "off").
+novalidate: A Boolean attribute that prevents the form from being validated before submission.
+
+
+
+Form Elements
+Below are essential HTML form elements used to build interactive and user-friendly forms:
+
+Elements
+
+Descriptions
+
+<label>	It defines labels for <form> elements.
+<input>	It is used to get input data from various types such as text, password, email, etc by changing its type.
+<button>	It defines a clickable button to control other elements or execute a functionality.
+<select>	It is used to create a drop-down list.
+<textarea>	It is used to get input long text content.
+<fieldset>	It is used to draw a box around other form elements and group the related data.
+<legend>	It defines a caption for fieldset elements
+<datalist>	It is used to specify pre-defined list options for input controls.
+<output>	It displays the output of performed calculations.
+<option>	It is used to define options in a drop-down list.
+<optgroup>	It is used to define group-related options in a drop-down list.
+Input Types in HTML Forms
+Here are the commonly used input types in HTML Forms:
+
+Input Type
+
+Description
+
+<input type="text">
+
+Defines a one-line text input field
+
+<input type="password">
+
+Defines a password field
+
+<input type="submit">
+
+Defines a submit button
+
+<input type="reset">
+
+Defines a reset button
+
+<input type="radio">
+
+Defines a radio button
+
+<input type="email">
+
+Validates that the input is a valid email address.
+
+<input type="number">
+
+Allows the user to enter a number. You can specify min, max, and step attributes for range.
+
+<input type="checkbox">
+
+Used for checkboxes where the user can select multiple options.
+
+<input type="date">
+
+Allows the user to select a date from a calendar.
+
+<input type="time">
+
+Allows the user to select a time.
+
+<input type="file">
+
+Allows the user to select a file to upload.
+
