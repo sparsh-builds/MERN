@@ -1,0 +1,4 @@
+Heroku is for Web hosting 
+
+bootstrap 2 equal width col -> col-6
+

@@ -14,3 +14,8 @@ tailwind.config.js
 
 resp img w -h full auto 
 
+
+
+justify - main axis -> horizontal 
+
+items center - cross axix -> vertical 
