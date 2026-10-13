@@ -7,5 +7,8 @@ null -> object
 
 default name -> fun name or var name 
 
-.bind ::  
+.bind :: bind val to funcions  
 
+ add(a,b)-> a+b 
+
+ add(5) -> 5 + NaN == NaN

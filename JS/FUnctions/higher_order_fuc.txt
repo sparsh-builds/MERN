@@ -129,7 +129,9 @@ function mul(x) {
 }
 var mulFn = mul(2);
 console.log(mulFn(5));
+
 The multiply function is curried, returning a new function each time it is called with an argument.
+
 mulFn is a partially applied function that multiplies any given number by 2.
 
 
