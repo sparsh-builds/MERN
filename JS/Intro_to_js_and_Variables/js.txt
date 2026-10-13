@@ -70,7 +70,7 @@ JavaScript was initially designed to run within a web browser that has a JavaScr
 
 JS -> JS engine -> Browser 
 
-Jscore on  Safari and chakra on Microsoft edge are some js engines
+Js core on  Safari and chakra on Microsoft edge are some js engines
 
 js -> js engine -> parsing -> compilation ->  Execution -> Garbage collection -> Event loop -> Chrome
 

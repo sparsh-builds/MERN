@@ -15,7 +15,7 @@ function fun2(action) {
 
 fun2(fun);
 
-Popular Higher Order Functions in JavaScript
+Popular Higher Order Functions in JavaScript  ::-->
 
 
 
@@ -90,7 +90,8 @@ The callback (num) => num > 0 checks if all numbers are positive.
 It returns true only if all elements pass the condition.
 
 
-Advanced Techniques with Higher Order Functions
+:: Advanced Techniques with Higher Order Functions
+
 1. Function Composition
 Function composition is the process of combining multiple functions to create a new function. The composed function applies multiple operations in sequence.
 
@@ -205,12 +206,10 @@ console.log(mul3(5));
 Function Factory: mulBy returns a new function based on the provided factor, demonstrating the ability to create dynamic, parameterized functions.
 Closure in Action: The returned function uses the captured factor to perform multiplication, showcasing the power of closures to retain access to external variables.
 Reusability and Customization: This pattern simplifies creating reusable multipliers (e.g., mul2, mul3), enabling efficient and customizable solutions with minimal effort.
+
+
 3. Array Method map() as a Higher-Order Function
 JavaScript array methods such as map(), filter(), and reduce() are excellent examples of higher-order functions. These methods take callback functions as arguments and provide powerful ways to manipulate arrays.
-
-
-
-
 
 const a = [1, 2, 3, 4, 5];
 const double = a.map(function(n) {

@@ -10,10 +10,11 @@ data_types_in_javascript
 Primitive Data Type
 Primitive data types in JavaScript represent simple, immutable values stored directly in memory, ensuring efficiency in both memory usage and performance.
 
+
+
+
 1. Number
 The Number data type in JavaScript includes both integers and floating-point numbers. Special values like Infinity, -Infinity, and NaN represent infinite values and computational errors, respectively.
-
-
 let n1 = 2;
 console.log(n1)
 ​
@@ -22,7 +23,7 @@ console.log(n2)
 ​
 let n3 = Infinity;
 console.log(n3)
-​
+
 let n4 = 'something here too' / 2;
 console.log(n4)
 
@@ -32,7 +33,6 @@ console.log(n4)
 
 2. String
 A String in JavaScript is a series of characters that are surrounded by quotes. There are three types of quotes in JavaScript, which are.
-
 
 let s1 = "Hello There";
 console.log(s1); 
@@ -54,89 +54,90 @@ console.log(b1);
 ​
 let b2 = false;
 console.log(b2);
+
+
+
+
 4. Null
 The special null value does not belong to any of the default data types. It forms a separate type of its own which contains only the null value.
-
-
-
 
 
 let age = null;
 console.log(age)
 The 'null' data type defines a special value that represents nothing, or empty value.
 
+
+
 5. Undefined
 A variable that has been declared but not initialized with a value is automatically assigned the undefined value. It means the variable exists, but it has no value assigned to it.
 
-
-
-
-
 let a;
 console.log(a);
+
+
+
 6. Symbol (Introduced in ES6)
 Symbols, introduced in ES6, are unique and immutable primitive values used as identifiers for object properties. They help create unique keys in objects, preventing conflicts with other properties.
-
-
-
-
 
 let s1 = Symbol("Geeks");
 let s2 = Symbol("Geeks");
 console.log(s1 == s2);
+
+
+
+
 7. BigInt (Introduced in ES2020)
 BigInt is a built-in object that provides a way to represent whole numbers greater than 253. The largest number that JavaScript can reliably represent with the Number primitive is 253, which is represented by the MAX_SAFE_INTEGER constant.
 
-
-
-
-
 let b = BigInt("0b1010101001010101001111111111111111");
 console.log(b);
+
+
+
+
+
+
+
 Non-Primitive Data Types
 The data types that are derived from primitive data types are known as non-primitive data types. It is also known as derived data types or reference data types.
 
+
+
 1. Object
 JavaScript objects are key-value pairs used to store data, created with {} or the new keyword. They are fundamental as nearly everything in JavaScript is an object.
-
-
-
-
 
 let gfg = {
     type: "Company",
     location: "Noida"
 }
 console.log(gfg.type)
+
+
+
 2. Arrays
 An Array is a special kind of object used to store an ordered collection of values, which can be of any data type.
-
-
-
-
-
 let a1 = [1, 2, 3, 4, 5];
 console.log(a1);
 ​
 let a2 = [1, "two", { name: "Object" }, [3, 4, 5]];
 console.log(a2);
+
+
+
+
 3. Function
 A function in JavaScript is a block of reusable code designed to perform a specific task when called.
-
-
-
-
 
 // Defining a function to greet a user
 function greet(name) { return "Hello, " + name + "!"; }
 // Calling the function
 console.log(greet("Ajay"));
+
+
+
+
 4. Date Object
 The Date object in JavaScript is used to work with dates and times, allowing for date creation, manipulation, and formatting.
-
-
-
-
 
 // Creating a new Date object for the
 // current date and time
@@ -144,13 +145,11 @@ let currentDate = new Date();
 ​
 // Displaying the current date and time
 console.log(currentDate);
+
+
+
 5. Regular Expression
 A RegExp (Regular Expression) in JavaScript is an object used to define search patterns for matching text in strings.
-
-
-
-
-
 // Creating a regular expression to match the word "hello"
 let pattern = /hello/;
 ​
@@ -187,7 +186,7 @@ Non-primitive Data types
 
 object
 
-Arrys (Note: Arrays)
+Arrays 
 
 function
 
@@ -199,6 +198,10 @@ In JavaScript, scope defines the accessibility of variables in different parts o
 
 Before ES6 (Released in 2015), variables were declared only with var, which is function-scoped (accessible within the function) and global Scoped (Accessible everywhere) and prone to issues like hoisting and global pollution.
 let and const were introduced with ES6. Variables declared with let and const are either block scoped or global-scooped.
+
+
+
+
 Types of Scope
 Global Scope: Variables declared outside any function or block are accessible everywhere in the code.
 Function Scope: Variables declared with var inside a function are accessible only within that function. Function can be nested in JavaScript and the inner function can access outer function members and this is called Lexical Scope.
@@ -227,6 +230,8 @@ Output
 10
 20
 30
+
+
 Note: Here let and const are behaving similar to var but they do not attach to the window object. They are scoped globally but are not properties of window, making them safer and less prone to conflicts.
 
 
@@ -249,11 +254,9 @@ if (true) {
 console.log(x); // Output: 10 (accessible outside the block)
 console.log(y); // Error: y is not defined (block-scoped)
 console.log(z); // Error: z is not defined (block-scoped)
+
+
 Example of Function Scope
-
-
-
-
 
 function example() {
     var x = 10;   // Function-scoped
@@ -268,7 +271,7 @@ console.log(x); // Error: x is not defined
 console.log(y); // Error: y is not defined
 console.log(z); // Error: z is not defined
 
-math.js 
+math.js
 Example of Modular Scope
 
 
@@ -305,12 +308,10 @@ function outer() {
 }
 outer();
 
-Different cases of scope
+
+
+:: Different cases of scope
 We have a global variable defined in the first line in the global scope. Then we have a local variable defined inside the function fun(). 
-
-
-
-
 
 let globalLet = "This is a global variable";
 {
@@ -321,6 +322,7 @@ let globalLet = "This is a global variable";
     // This is a local variable
     console.log(localLet);   
 }
+
 
 Global Variables: Inside a function, global variables (declared outside) are accessible.
 Local Variables: Local variables (declared inside the function) are also accessible within that function.
@@ -466,7 +468,7 @@ console.log(10 === "10");
 Other operators include <, <=, >=, and !==.
 
 
-== loose equality 
+== loose equality check for only val and not type 
 
 
 4. JavaScript Logical Operators
@@ -482,13 +484,11 @@ console.log(a || b); // Logical OR
 && returns true if both operands are true.
 || returns true if at least one operand is true.
 ! negates the boolean value.
+
+
+
 5. JavaScript Bitwise Operators
 Bitwise operators perform operations on binary representations of numbers.
-
-
-
-
-
 const res = 5 & 1; // Bitwise AND
 console.log(res);
 & performs AND operation on each bit.
@@ -498,36 +498,30 @@ console.log(res);
 << shifts bits to the left.
 >> shifts bits to the right (with sign).
 >>> shifts bits to the right (without sign).
+
+
+
 6. JavaScript Ternary Operator
 The ternary operator is a shorthand for conditional statements. It takes three operands.
-
-
-
-
-
 const age = 18;
 const status = age >= 18 ? "Adult" : "Minor";
 console.log(status);
 condition ? expression1 : expression2 evaluates expression1 if the condition is true, otherwise evaluates expression2.
 
+
+
 7. JavaScript Comma Operator
 Comma Operator (,) mainly evaluates its operands from left to right sequentially and returns the value of the rightmost operand. 
-
-
-
-
-
 let n1, n2
 const res = (n1 = 1, n2 = 2, n1 + n2);
 console.log(res);
 The final result of the expression is the rightmost value.
+
+
+
+
 8. JavaScript Unary Operators
 Unary operators operate on a single operand (e.g., increment, decrement).
-
-
-
-
-
 let x = 5;
 ​
 console.log(+x);
@@ -544,45 +538,40 @@ console.log(!x);
 ! converts to boolean and reverses the value (true ↔ false).
 typeof returns the data type of a variable.
 delete removes a property from an object.
+
+
+
 9. JavaScript Relational Operators
 JavaScript Relational operators are used to compare its operands and determine the relationship between them. They return a Boolean value (true or false) based on the comparison result.
-
-
-
-
-
 const obj = { length: 10 };
 console.log("length" in obj);
 console.log([] instanceof Array);
 in checks if a property exists in an object.
 instanceof checks if an object is an instance of a constructor.
+
+
+
 10. JavaScript BigInt Operators
 BigInt operators allow calculations with numbers beyond the safe integer range.
-
-
-
-
-
 const big1 = 123456789012345678901234567890n;
 const big2 = 987654321098765432109876543210n;
 console.log(big1 + big2);
 Operations like addition, subtraction, and multiplication work with BigInt.
 Use n suffix to denote BigInt literals.
+
+
+
 11. JavaScript String Operators
 JavaScript String Operators include concatenation (+) and concatenation assignment (+=), used to join strings or combine strings with other data types.
-
-
-
-
-
 const s = "Hello" + " " + "World";
 console.log(s);
 + concatenates strings.
 += appends to an existing string.
+
+
+
 12. JavaScript Chaining Operator (?.)
 The optional chaining operator allows safe access to deeply nested properties without throwing errors if the property doesn’t exist.
-
-
 const obj = { name: "Aman", address: { city: "Delhi" } };
 console.log(obj.address?.city);
 console.log(obj.contact?.phone);

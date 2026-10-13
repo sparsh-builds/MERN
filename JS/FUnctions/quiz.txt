@@ -5,5 +5,7 @@ The first argument (null) sets the this context (which isn't used here).   The s
 
 null -> object 
 
-default name -> fiun cname or var name 
+default name -> fun name or var name 
+
+.bind ::  
 

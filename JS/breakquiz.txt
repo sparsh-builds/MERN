@@ -2,3 +2,9 @@ Heroku is for Web hosting
 
 bootstrap 2 equal width col -> col-6
 
+default type of -> object  for null also 
+
+empty string and array are also object
+
+
+Each func call creates its own scope so each call has a sep var val 
