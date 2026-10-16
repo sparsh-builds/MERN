@@ -1,0 +1,105 @@
+let arr = [10, 20, 30, 40];
+console.log(arr.length);
+
+let arr = [10, 20, 30];
+console.log(arr.toString()); // comma separated strin m convert kr dega 
+
+join()
+The join() method combines array elements into a string using the specified separator.
+
+
+
+
+
+let arr = ["HTML", "CSS", "JavaScript"];
+console.log(arr.join(" - "));
+
+
+
+let arr = [10, 20];
+arr.push(30);
+console.log(arr); // adds at end of array
+
+let arr = [10, 20, 30];
+console.log(arr.pop()); 
+console.log(arr); // remove last element
+
+let arr = [20, 30];
+arr.unshift(10);
+console.log(arr); // adds at beginning
+
+let arr = [10, 20, 30];
+console.log(arr.shift()); 
+console.log(arr); // Removes first element
+
+let arr = [10, 20, 30, 40];
+console.log(arr.slice(1, 3));  // return shalow copy without modify
+
+
+let arr = [10, 20, 30];
+arr.splice(1, 1, 25);
+console.log(arr); // modify orignal array
+
+
+
+flat()
+The flat() method creates a new array by flattening nested arrays to the specified depth. Its default depth is 1.
+
+let arr = [1, [2, [3, 4]]];
+console.log(arr.flat(2));
+
+
+flatMap()
+The flatMap() method maps each element and flattens the result by one level.
+let arr = [1, 2, 3];
+console.log(arr.flatMap(x => [x, x * 2]));
+
+
+
+
+
+4. Transforming and Iterating Over Arrays
+map()
+The map() method creates a new array by applying a callback function to every element.
+let arr = [1, 2, 3];
+console.log(arr.map(x => x * 2));
+
+
+
+
+forEach()
+The forEach() method executes a callback function for each array element. It does not return a new array.
+let arr = [10, 20, 30];
+arr.forEach(x => console.log(x));
+
+
+
+filter()
+The filter() method creates a new array containing elements that satisfy a specified condition.
+let arr = [10, 15, 20, 25];
+console.log(arr.filter(x => x > 15));
+
+
+
+includes()
+The includes() method checks whether an array contains a specified value and returns true or false.
+let arr = [10, 20, 30];
+console.log(arr.includes(20));
+
+
+
+
+find()
+The find() method returns the first element that satisfies a condition. It returns undefined if no element matches.
+let arr = [10, 20, 30, 40];
+console.log(arr.find(x => x > 20));
+
+
+
+findIndex()
+The findIndex() method returns the index of the first element that satisfies a condition, or -1 if none matches.
+
+let arr = [10, 20, 30, 40];
+console.log(arr.findIndex(x => x > 20));
+
+

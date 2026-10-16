@@ -8,3 +8,7 @@ empty string and array are also object
 
 
 Each func call creates its own scope so each call has a sep var val 
+
+
+let is block scoped 
+

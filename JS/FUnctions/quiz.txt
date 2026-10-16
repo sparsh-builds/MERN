@@ -12,3 +12,7 @@ default name -> fun name or var name
  add(a,b)-> a+b 
 
  add(5) -> 5 + NaN == NaN
+
+
+NaN dtype -> NaN hi hai 
+

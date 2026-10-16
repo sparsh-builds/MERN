@@ -18,4 +18,7 @@ resp img w -h full auto
 
 justify - main axis -> horizontal 
 
-items center - cross axix -> vertical 
+items center - cross axix -> vertical main-axis -> horizontal
+
+1.5 rem -> text xl
+
