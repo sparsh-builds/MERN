@@ -1,3 +1,6 @@
+
+
+
 let arr = [10, 20, 30, 40];
 console.log(arr.length);
 
@@ -101,5 +104,62 @@ The findIndex() method returns the index of the first element that satisfies a c
 
 let arr = [10, 20, 30, 40];
 console.log(arr.findIndex(x => x > 20));
+
+
+some()
+The some() method checks whether at least one array element satisfies a condition.
+
+let arr = [10, 20, 30];
+console.log(arr.some(x => x > 25));
+
+every()
+The every() method checks whether all array elements satisfy a condition.
+
+let arr = [10, 20, 30];
+console.log(arr.every(x => x > 5));
+
+reduce()
+The reduce() method processes array elements to produce a single accumulated result.
+
+let arr = [10, 20, 30];
+console.log(arr.reduce((sum, x) => sum + x, 0));
+
+fill()
+The fill() method replaces array elements with a specified value within a selected range. It modifies the original array.
+
+let arr = [1, 2, 3, 4];
+arr.fill(0, 1, 3);
+console.log(arr);
+
+sort()
+The sort() method sorts array elements in place. Use a comparison function to sort numbers numerically.
+
+let arr = [30, 5, 20, 10];
+arr.sort((a, b) => a - b);
+console.log(arr); // b-a for desc 
+
+reverse()
+The reverse() method reverses the order of elements in an array and modifies the original array.
+
+let arr = [10, 20, 30];
+arr.reverse();
+console.log(arr);
+
+values()
+The values() method returns an iterator containing the array's element values.
+
+let arr = ["HTML", "CSS", "JavaScript"];
+console.log([...arr.values()]);
+
+7. The delete Operator
+The delete operator is a JavaScript operator, not an array method. It removes an object's property, 
+but using it on an array element leaves a hole without changing the array's length.
+
+let arr = [10, 20, 30];
+delete arr[1];
+console.log(arr); 
+console.log(arr.length);
+
+For removing array elements, splice() is generally more appropriate because it also shifts the remaining elements.
 
 

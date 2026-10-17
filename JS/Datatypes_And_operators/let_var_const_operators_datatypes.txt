@@ -1,4 +1,5 @@
-JavaScript data types define what kind of values a variable can hold and how those values behave in a program. They determine how data is stored in memory and how operations like comparison, calculation, and conversion work.
+JavaScript data types define what kind of values a variable can hold and how those values behave in a program. 
+They determine how data is stored in memory and how operations like comparison, calculation, and conversion work.
 
 Each data type has its own methods and operations that control how it can be used.
 Understanding data types helps prevent errors and makes code more efficient and reliable.
@@ -6,15 +7,21 @@ Understanding data types helps prevent errors and makes code more efficient and 
 JavaScript Data Type Categories
 JavaScript data types are categorized into Primitive and Non-Primitive types
 
-data_types_in_javascript
+:: data_types_in_javascript
+
+
 Primitive Data Type
-Primitive data types in JavaScript represent simple, immutable values stored directly in memory, ensuring efficiency in both memory usage and performance.
+
+Primitive data types in JavaScript represent simple, immutable values stored directly in memory, 
+ensuring efficiency in both memory usage and performance.
 
 
 
 
 1. Number
+
 The Number data type in JavaScript includes both integers and floating-point numbers. Special values like Infinity, -Infinity, and NaN represent infinite values and computational errors, respectively.
+
 let n1 = 2;
 console.log(n1)
 ​
@@ -31,7 +38,8 @@ console.log(n4)
 
 
 
-2. String
+-->2. String
+
 A String in JavaScript is a series of characters that are surrounded by quotes. There are three types of quotes in JavaScript, which are.
 
 let s1 = "Hello There";
@@ -45,7 +53,8 @@ console.log(s3);
 
 
 
-3. Boolean
+-->3. Boolean
+
 The boolean type has only two values i.e. true and false.
 
 
@@ -58,17 +67,20 @@ console.log(b2);
 
 
 
-4. Null
+-->4. Null
+
 The special null value does not belong to any of the default data types. It forms a separate type of its own which contains only the null value.
 
 
 let age = null;
 console.log(age)
-The 'null' data type defines a special value that represents nothing, or empty value.
+
+-->The 'null' data type defines a special value that represents nothing, or empty value.
 
 
 
-5. Undefined
+-->5. Undefined
+
 A variable that has been declared but not initialized with a value is automatically assigned the undefined value. It means the variable exists, but it has no value assigned to it.
 
 let a;
@@ -76,17 +88,20 @@ console.log(a);
 
 
 
-6. Symbol (Introduced in ES6)
+-->6. Symbol (Introduced in ES6)
+
 Symbols, introduced in ES6, are unique and immutable primitive values used as identifiers for object properties. They help create unique keys in objects, preventing conflicts with other properties.
 
 let s1 = Symbol("Geeks");
 let s2 = Symbol("Geeks");
+
 console.log(s1 == s2);
 
 
 
-
+-->
 7. BigInt (Introduced in ES2020)
+
 BigInt is a built-in object that provides a way to represent whole numbers greater than 253. The largest number that JavaScript can reliably represent with the Number primitive is 253, which is represented by the MAX_SAFE_INTEGER constant.
 
 let b = BigInt("0b1010101001010101001111111111111111");
@@ -98,24 +113,29 @@ console.log(b);
 
 
 
-Non-Primitive Data Types
+:: Non-Primitive Data Types
+
 The data types that are derived from primitive data types are known as non-primitive data types. It is also known as derived data types or reference data types.
 
 
 
-1. Object
+-->1. Object
+
 JavaScript objects are key-value pairs used to store data, created with {} or the new keyword. They are fundamental as nearly everything in JavaScript is an object.
 
 let gfg = {
     type: "Company",
     location: "Noida"
 }
+
 console.log(gfg.type)
 
 
 
-2. Arrays
+-->2. Arrays
+
 An Array is a special kind of object used to store an ordered collection of values, which can be of any data type.
+
 let a1 = [1, 2, 3, 4, 5];
 console.log(a1);
 ​
@@ -125,88 +145,123 @@ console.log(a2);
 
 
 
-3. Function
+-->3. Function
+
 A function in JavaScript is a block of reusable code designed to perform a specific task when called.
 
+
 // Defining a function to greet a user
+
 function greet(name) { return "Hello, " + name + "!"; }
+
 // Calling the function
+
 console.log(greet("Ajay"));
 
 
 
 
-4. Date Object
+-->4. Date Object
+
 The Date object in JavaScript is used to work with dates and times, allowing for date creation, manipulation, and formatting.
 
+
 // Creating a new Date object for the
+
 // current date and time
+
 let currentDate = new Date();
 ​
+
 // Displaying the current date and time
+
 console.log(currentDate);
 
 
 
-5. Regular Expression
+-->5. Regular Expression
+
 A RegExp (Regular Expression) in JavaScript is an object used to define search patterns for matching text in strings.
+
 // Creating a regular expression to match the word "hello"
+
 let pattern = /hello/;
 ​
+
 // Testing the pattern against a string
+
 // Returns false because "hello" is not present
+
 let result = pattern.test("Hello, world!"); 
 ​
 console.log(result);
 
 
-Data Types in Javascript
+-->Data Types in Javascript
 
-Primitive Data types
+::Primitive Data types
 
-Numeric Type
+            Numeric Type
 
-Number
+            Number
 
-bigint
+            bigint
 
-Non-Numeric Type
+            Non-Numeric Type
 
-String
+            String
 
-Boolean
+            Boolean
 
-Null
+            Null
 
-Undefined
+            Undefined
 
-Symbol
+            Symbol
 
-Non-primitive Data types
+:: Non-primitive Data types
 
-object
+            object
 
-Arrays 
+            Arrays 
 
-function
+            function
 
-Date object
+            Date object
 
-regular expression
+            regular expression
 
-In JavaScript, scope defines the accessibility of variables in different parts of your code. It determines where a variable can be accessed or modified.
 
-Before ES6 (Released in 2015), variables were declared only with var, which is function-scoped (accessible within the function) and global Scoped (Accessible everywhere) and prone to issues like hoisting and global pollution.
-let and const were introduced with ES6. Variables declared with let and const are either block scoped or global-scooped.
+
+In JavaScript, scope defines the accessibility of variables in different parts of your code. 
+It determines where a variable can be accessed or modified.
+
+Before ES6 (Released in 2015), variables were declared only with var, 
+which is function-scoped (accessible within the function) and global Scoped (Accessible everywhere) 
+and prone to issues like hoisting and global pollution.
+
+let and const were introduced with ES6. 
+Variables declared with let and const are either block scoped or global-scooped.
 
 
 
 
 Types of Scope
+
 Global Scope: Variables declared outside any function or block are accessible everywhere in the code.
-Function Scope: Variables declared with var inside a function are accessible only within that function. Function can be nested in JavaScript and the inner function can access outer function members and this is called Lexical Scope.
+
+
+Function Scope: Variables declared with var inside a function are accessible only within that function. 
+Function can be nested in JavaScript and the inner function can access outer function members and this 
+is called Lexical Scope.
+
+
 Block Scope: Variables declared with let or const inside a block ({}) are accessible only within that block.
-Modular Scope: Introduced in ES6, ES Modules are the standard way to organize JavaScript code into reusable and maintainable chunks. Each module has its own scope, and anything declared within a module is private by default unless explicitly exported.
+
+
+Modular Scope: Introduced in ES6, ES Modules are the standard way to organize JavaScript code into 
+reusable and maintainable chunks. Each module has its own scope, and anything declared within a module 
+is private by default unless explicitly exported.
 
 Example of Global Scope
 
@@ -232,16 +287,22 @@ Output
 30
 
 
-Note: Here let and const are behaving similar to var but they do not attach to the window object. They are scoped globally but are not properties of window, making them safer and less prone to conflicts.
+Note: Here let and const are behaving similar to var but they do not attach to the window object. 
+They are scoped globally but are not properties of window, making them safer and less prone to conflicts.
 
 
 var globalVar = "I am global";
+
 console.log(window.globalVar); 
 
 let globalLet = "I am block-scoped";
+
 console.log(window.globalLet);
+
 global-scope-of-let
+
 Understanding variable scopes in JavaScript
+
 Examples of Block Scope
 
 
@@ -393,7 +454,11 @@ function fun() {
 }
 fun();
 
-Output
+
+
+
+
+
 This is a local variable
 Local Variable Preference: Inside the function, JavaScript first looks for globalLet in the local scope, finds it, and logs the local variable.
 Scope Search: If globalLet weren’t declared locally, JavaScript would search for it in the global scope.
@@ -415,6 +480,13 @@ Output:
 undefined
 let variables don’t get added to the window object, so window.globalLet is undefined.
 The local let shadows the global one but still isn’t on window.
+
+
+
+
+
+
+
 
 
 

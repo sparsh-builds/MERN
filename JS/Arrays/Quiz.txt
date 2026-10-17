@@ -1,0 +1,8 @@
+for ( i =0 ; i <arr.length;i++)
+
+let arr = Array() // shorthand for creating new empty array 
+
+.fill(value) value fill krega 
+
+JavaScript me arrays reference types hote hain.   Jab aap let arr2 = arr1; karte hain, toh naya array nahi banta balki dono variables memory me same array ke reference (address) ko point karte hain. 
+

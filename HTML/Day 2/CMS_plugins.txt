@@ -1,62 +1,101 @@
 Understanding CMS: WordPress vs. Payload
 
 comments
-A CMS (Content Management System) helps companies easily create, edit, manage, and publish content (like websites, blogs, or landing pages) without needing to code every time.
+A CMS (Content Management System) helps companies easily create, edit, manage, and publish content 
+(like websites, blogs, or landing pages) without needing to code every time.
 
-Why companies use CMS:
+-->Why companies use CMS:
+
 
 Easy Website Updates: Anyone can update text, images, or links without needing a developer.
+
 Saves Time and Cost: No need to build everything from scratch using HTML or code.
+
 Multiple Users: Teams (marketing, design, editors) can work together on content.
+
 SEO and Plugins: Helps with Google ranking and adding features (e.g., contact forms, analytics).
-WordPress: Most used CMS
-WordPress is the most widely used CMS in the world, powering over 43% of websites globally. Originally launched in 2003 as a blogging platform, it has since evolved into a versatile tool for building websites, blogs, business pages, and even e-commerce stores. Popular WordPress Plugins are:
+
+-->WordPress: Most used CMS
+
+WordPress is the most widely used CMS in the world, powering over 43% of websites globally. 
+Originally launched in 2003 as a blogging platform, it has since evolved into a versatile tool for building websites, blogs, 
+business pages, and even e-commerce stores. Popular WordPress Plugins are:
 
 Yoast SEO: This plugin is a must-have for anyone looking to improve their website’s SEO performance.
+
 WooCommerce: Perfect for transforming a WordPress site into a fully functional online store.
+
 Elementor: A powerful drag-and-drop page builder that makes it easy to design pages without any coding.
-WP Rocket: A performance optimization plugin that helps improve website speed by enabling caching and other techniques for faster loading times.
-wordpress_plugins
-WordPress Plugins
+
+WP Rocket: A performance optimization plugin that helps improve website speed by enabling caching and other techniques 
+
+for faster loading times.
 
 
-Note: WordPress is becoming outdated for many companies because it's built on PHP, which can be slower and harder to scale for modern applications. Instead, companies are now moving to modern CMS platforms like Payload CMS, which use JavaScript/TypeScript (Node.js). These are faster, more flexible, and better suited for building advanced, scalable websites and applications.
+Note: WordPress is becoming outdated for many companies because it's built on PHP, which can be slower and harder
+to scale for modern applications. Instead, companies are now moving to modern CMS platforms like Payload CMS, 
+which use JavaScript/TypeScript (Node.js). These are faster, more flexible, and better suited for building advanced, 
+scalable websites and applications.
+
+
 
 When to use Payload CMS?
-With Payload, developers have full control over the website’s frontend and can use their preferred technologies for the display of content. It’s designed to integrate seamlessly with modern frameworks like Next.js, allowing developers to create fast, scalable, and dynamic websites.
 
-If data ownership and privacy are important to you, and you don't want to allow another proprietary SaaS vendor to host and own your data.
+With Payload, developers have full control over the website’s frontend and can use their preferred technologies for 
+the display of content. It’s designed to integrate seamlessly with modern frameworks like Next.js, allowing developers 
+to create fast, scalable, and dynamic websites.
+
+If data ownership and privacy are important to you, and you don't want to allow another proprietary 
+SaaS vendor to host and own your data.
 
 Popular Payload Plugins
-payload-visual-editor: This plugin adds a visual editor within the admin UI, offering an easy-to-use interface for content creators to manage and modify content without diving into code.
-payload-ai: This plugin integrates artificial intelligence for content creation and management, helping users streamline their content workflow.
-payload-auth-plugin: Designed to simplify authentication, this plugin allows easy integration of OAuth and OpenID Connect providers for secure user access.
-payload-plugin-author-fields: Automatically adds createdBy and updatedBy fields to collections and globals, ensuring that all content is tracked and attributed correctly.
+
+payload-visual-editor: This plugin adds a visual editor within the admin UI, offering an easy-to-use interface 
+ content creators to manage and modify content without diving into code.
+
+payload-ai: This plugin integrates artificial intelligence for content creation and management, helping users 
+streamline their content workflow.
+
+payload-auth-plugin: Designed to simplify authentication, this plugin allows easy integration of OAuth and 
+OpenID Connect providers for secure user access.
+
+payload-plugin-author-fields: Automatically adds createdBy and updatedBy fields to collections and globals, 
+ensuring that all content is tracked and attributed correctly.
 
 
 Companies That Prefer Payload Over WordPress
 
-Microsoft: Microsoft utilized Payload for creating a dynamic campaign hub, providing flexibility and customization for their marketing efforts.
-Blue Origin: Payload was used to send student postcards to space, showcasing how the CMS can be leveraged for creative and unique projects.
-Sonos: The audio technology company transformed its campaign hub using Payload, ensuring that it met the high standards required for user experience and functionality.
-ASICS: ASICS used Payload to create a streamlined ambassador platform, providing the flexibility needed to handle global campaigns.
-Hello Bello: This e-commerce brand used Payload to build a highly functional and scalable online store, showcasing the platform’s potential for retail and commercial websites.
-companies_using_payload
-Companies using Payload
+Microsoft: Microsoft utilized Payload for creating a dynamic campaign hub, providing flexibility and 
+customization for their marketing efforts.
+
+Blue Origin: Payload was used to send student postcards to space, showcasing how the CMS can be leveraged 
+for creative and unique projects.
+
+Sonos: The audio technology company transformed its campaign hub using Payload, ensuring that it met the
+ high standards required for user experience and functionality.
+
+ASICS: ASICS used Payload to create a streamlined ambassador platform, providing the flexibility needed to 
+handle global campaigns.
+
+Hello Bello: This e-commerce brand used Payload to build a highly functional and scalable online store,
+ showcasing the platform’s potential for retail and commercial websites.
 
 
 Web Hosting: What Is It?
 
-comments
-Web hosting is what makes your website visible on the internet. It stores your website’s files on special computers called servers and delivers them to visitors when they type in your domain name.
+
+Web hosting is what makes your website visible on the internet. It stores your website’s files on special computers 
+called servers and delivers them to visitors when they type in your domain name.
 
 Web hosting allows websites to be online 24/7 by storing files (images, text, code) on servers.
+
+
 When someone enters your domain (like⁣ - ⁣www.geeksforgeeks.org), the server sends the website files to their browser.
-web_hosting
-Web Hosting
+
 To ensure your site performs well and remains secure, it's important to choose a reliable hosting provider by considering key factors like cost, server uptime, customer support, scalability, and security features.
 
 What Makes Web Hosting Servers Unique?
+
 Web Hosting servers are kind of like regular home computers but they have a few important extra features/requirements to help them do their job better.
 
 The most important thing is stability, a server needs to stay online all the time without crashing. That’s why many web servers use the Linux operating system. Linux is more stable and reliable than Windows for this kind of work.

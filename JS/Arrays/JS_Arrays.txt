@@ -2,16 +2,27 @@
 
 JavaScript Arrays
 
-comments
-In JavaScript, an array is an ordered list of values. Each value, known as an element, is assigned a numeric position in the array called its index.
+In JavaScript, an array is an ordered list of values. Each value, known as an element, 
+is assigned a numeric position in the array called its index.
 
 The indexing starts at 0, so the first element is at position 0, the second at position 1, and so on.
-Arrays can hold any type of data-such as numbers, strings, objects, or even other arrays-making them a flexible and essential part of JavaScript programming.
+Arrays can hold any type of data-such as numbers, strings, objects, or even other arrays-making them a flexible 
+and essential part of JavaScript programming.
+
+
+
+
 
 // Creating array
 let numbers = [2, 4 , 8, 12, 16];
+
+
+
 //Printing array
 console.log(numbers);
+
+
+
 
 1. Create Array using Literal
 Creating an array using array literal involves using square brackets [] to define and initialize the array.
@@ -20,14 +31,21 @@ Creating an array using array literal involves using square brackets [] to defin
 let a = [];
 console.log(a);
 ​
+
+
 // Creating an Array and Initializing with Values
 let b = [10, 20, 30];
 console.log(b);
 
+
+
+
 2. Create using new Keyword (Constructor)
+
 The "Array Constructor" refers to a method of creating arrays by invoking the Array constructor function.
 
 // Creating and Initializing an array with values
+
 let a = new Array(10, 20, 30);
 
 console.log(a);
@@ -38,16 +56,27 @@ console.log(a);
 
 
 // Creating an Array and Initializing with Values
+
 let a = ["HTML", "CSS", "JS"];
+
 
 // Accessing Array Elements
+
 console.log(a[0]);
+
 console.log(a[1]);
 
+
+
+
+
+
 // Creating an Array and Initializing with Values
+
 let a = ["HTML", "CSS", "JS"];
 
-// Accessing First Array Elements
+--> // Accessing First Array Elements
+
 let fst = a[0];
 
 console.log("First Item: ", fst);
@@ -56,9 +85,11 @@ console.log("First Item: ", fst);
 
 
 // Creating an Array and Initializing with Values
+
 let a = ["HTML", "CSS", "JS"];
 
-// Accessing Last Array Elements
+--> // Accessing Last Array Elements
+
 let lst = a[a.length - 1];
 
 console.log("Last Item: ", lst);
@@ -67,22 +98,28 @@ console.log("Last Item: ", lst);
 
 
 // Creating an Array and Initializing with Values  ?? modifying
+
 let a = ["HTML", "CSS", "JS"];
+
 console.log(a);
 
 a[1]= "Bootstrap";
+
 console.log(a);
 
 
 // ADDING 
 
 // Creating an Array and Initializing with Values
+
 let a = ["HTML", "CSS", "JS"];
 
-// Add Element to the end of Array
+-->// Add Element to the end of Array
+
 a.push("Node.js");  // to end 
 
-// Add Element to the beginning
+-->// Add Element to the beginning
+
 a.unshift("Web Development");  // to beginning 
 
 console.log(a);
@@ -90,15 +127,21 @@ console.log(a);
 
 
 // Creating an Array and Initializing with Values
+
 let a = ["HTML", "CSS", "JS"];
+
 console.log("Original Array: " + a);
 
-// Removes and returns the last element
+-->// Removes and returns the last element
+
 let lst = a.pop();  // removes last 
+
 console.log("After Removing the last: " + a);
 
-// Removes and returns the first element
+-->// Removes and returns the first element
+
 let fst = a.shift();  // removes first 
+
 console.log("After Removing the First: " + a);
 
 
@@ -106,27 +149,34 @@ console.log("After Removing the First: " + a);
 // modify  original reduce it 
 
 // Creating an array for splice example
+
 let b = ["HTML", "CSS", "JS"];
 
-// Removes 2 elements starting from index 1
+-->// Removes 2 elements starting from index 1
+
 b.splice(1, 2);
+
 console.log("After Removing 2 elements starting from index 1: " + b);
 
 // Length
 
 // Creating an Array and Initializing with Values
+
 let a = ["HTML", "CSS", "JS"];
 
 let len = a.length;
 
 console.log("Array Length: " + len);
 
-// In crease Length 
+// Increase Length 
 
 // Creating an Array and Initializing with Values
+
 let a = ["HTML", "CSS", "JS"]
 
+
 // Increase the array length to 7
+
 a.length = 7;
 
 console.log("After Increasing Length: ", a);
@@ -134,24 +184,30 @@ console.log("After Increasing Length: ", a);
 // Decrease 
 
 // Decrease the array length to 2
+
 a.length = 2;
+
 console.log("After Decreasing Length: ", a)
 
 
 
 // Creating an Array and Initializing with Values
+
 let a = ["HTML", "CSS", "JS"];
 
 // Iterating through for loop
+
 for (let i = 0; i < a.length; i++) {
     console.log(a[i])
 }
 
 
 // Creating an Array and Initializing with Values
+
 let a = ["HTML", "CSS", "JS"];
 
 // Iterating through forEach loop
+
 a.forEach(function myfunc(x) {
     console.log(x);
 });
@@ -159,10 +215,13 @@ a.forEach(function myfunc(x) {
 // concatenates
 
 // Creating an Array and Initializing with Values
+
 let a = ["HTML", "CSS", "JS", "React"];
+
 let b = ["Node.js", "Express.js"];
 
 // Concatenate both arrays
+
 let concateArray = a.concat(b);
 
 console.log("Concatenated Array: ", concateArray);
@@ -170,32 +229,46 @@ console.log("Concatenated Array: ", concateArray);
 // to string
 
 // Creating an Array and Initializing with Values
+
 let a = ["HTML", "CSS", "JS"];
 
 // Convert array ot String
+
 console.log(a.toString());
 
 
 
 
 // Creating an Array and Initializing with Values
+
 let a = ["HTML", "CSS", "JS"];
+
 // Check type of array
+
 console.log(typeof a);
 
 check
 
+
 const courses = ["HTML", "CSS", "Javascript"];
+
 console.log("Using Array.isArray() method: ", Array.isArray(courses))
+
 console.log("Using instanceof method: ", courses instanceof Array)
 
 // Example 1
+
 const a1 = [5]
+
 console.log(a1)
 
 // Example 2
+
 const a2 = new Array(5) 
+
 console.log(a2)
 
+
+phle wala ek element 5 ki aaray bnayega dusra wala 5  elemnet ki  
 
 

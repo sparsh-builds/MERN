@@ -35,6 +35,9 @@ A score of 90 or more results in grade "A".
 A score between 80 and 89 results in grade "B".
 A score between 70 and 79 results in grade "C".
 Any score below 70 results in grade "D".
+
+
+
 2. Identify Weekday or Weekend
 This example uses a switch statement to handle a set of fixed options—whether a given day is a weekday or a weekend day. The switch statement is ideal for matching a value against multiple options.
 
@@ -65,6 +68,10 @@ The program checks the value of the day variable:
 
 If the day is "Sunday", it prints "Weekend".
 For any other day, it defaults to printing "Weekday".
+
+
+
+
 3. Factorial of a Number
 This problem uses a for loop to calculate the Factorial of a numbers. It's a great way to practice looping over a sequence and performing arithmetic.
 
@@ -94,6 +101,10 @@ The program prompts the user for a non-negative integer N.
 If the input is invalid (negative or not a number), it displays an error message.
 Otherwise, it calculates the factorial by multiplying all integers from 1 to NN using a for loop.
 Finally, it prints the factorial result to the console.
+
+
+
+
 4. Find All Prime Numbers Between 1 and 20
 In this example, we use a while loop to iterate over the numbers from 1 to 100 and check if each number is prime. The while loop is ideal for iterating until a condition is met, especially when you don't know beforehand how many iterations will be needed.
 
@@ -131,8 +142,6 @@ Explanation:
 The while loop starts at 2 and checks every number up to 20.
 For each number, the for loop checks if it's divisible by any number other than 1 and itself. If a number is not divisible by any other number, it's prime, and the program prints it.
 The program continues until it checks all numbers up to 20.
-
-
 
 let score = 85;
 let grade = score >= 90 ? "A" : score >= 80 ? "B" : "C";

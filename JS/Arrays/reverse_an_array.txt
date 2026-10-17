@@ -1,0 +1,98 @@
+Here are the different methods to reverse an array in JavaScript
+
+1. Using the reverse() Method
+JavaScript provides a built-in array method called reverse() that reverses the elements of the array in place. This method mutates the original array and returns the reversed array
+
+let a = [1, 2, 3, 4, 5];
+a.reverse();
+console.log(a);
+
+The reverse() method directly modifies the original array by reversing its elements.
+The reversed array is also returned as the result of the method
+
+2. Using For Loop
+Another approach is to manually reverse an array by using a loop to swap elements.
+
+
+
+
+
+const a = [1, 2, 3, 4, 5];
+for (let i = 0; i < Math.floor(a.length / 2); i++) {
+    let temp = a[i];
+    a[i] = a[a.length - 1 - i];
+    a[a.length - 1 - i] = temp;
+}
+console.log(a);
+
+A loop iterates through half the array, swapping the first element with the last, the second with the second-to-last, and so on.
+This approach directly modifies the original array without creating a new on
+
+3. Using Recursion
+You can use recursion by removing the first element of the array, reversing the rest of the array, and then pushing the removed element to the end of the reversed array.
+
+
+
+
+
+const a = [1, 2, 3, 4, 5];
+const reversed = (function reverse(a) {
+    if (a.length === 0) {
+        return [];
+    }
+    return [a.pop()].concat(reverse(a));
+})([...a]);
+console.log(reversed);
+
+The recursive function removes the last element of the array using pop() and appends it to a new array.
+The original array remains unchanged by creating a copy using the spread operator.
+
+4. Using the reduce() Method
+The reduce() method can be used to accumulate the elements of the array in reverse order by pushing each element to the front of the accumulator.
+
+
+
+
+
+let a = [1, 2, 3, 4, 5];
+let revArr = a.reduce((acc, current) => 
+    [current, ...acc], []);
+​
+console.log(revArr);
+The reduce() method iterates through the array, prepending each element to a new array.
+It does not affect the original array and constructs a reversed array as it processes elements.
+
+
+5. Using the Spread Operator and reverse()
+You can use the spread operator (...) to create a shallow copy of the array and then apply the reverse() method on that copy.
+
+
+
+
+
+let a = [1, 2, 3, 4, 5];
+let reversed = [...a].reverse();
+console.log(reversed);
+The spread operator creates a shallow copy of the original array.
+The reverse() method is applied to the copied array, leaving the original array intact.
+
+
+
+6. Using a Stack (Last-In-First-Out Approach)
+A stack follows the Last-In-First-Out (LIFO) principle, which can be used to reverse an array by pushing elements to the stack and then popping them back out.
+
+
+
+
+
+const a = [1, 2, 3, 4, 5];
+const rev = [];
+while (a.length > 0) {
+    rev.push(a.pop());
+}
+console.log(rev);
+
+
+The pop() method removes elements from the original array one by one.
+These elements are pushed into a new array, effectively reversing their orde
+

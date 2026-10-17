@@ -4,6 +4,9 @@ Dynamically typed: Variable types are determined at runtime.
 Single-threaded: Executes one task at a time (but supports asynchronous operations).
 Compiled and interpreted: Modern JavaScript engines combine compilation and interpretation for better performance.
 
+
+
+
 <html>
 <head></head>
 <body>
@@ -15,11 +18,18 @@ Compiled and interpreted: Modern JavaScript engines combine compilation and inte
 </body>
 </html>
 
+
+
+
 The<script> tag is used to include JavaScript code inside an HTML document.
-console.log() prints messages to the browser's developer console. Open the browser console to see the "Hello, World!" message.
+
+console.log() prints messages to the browser's developer console. Open the browser console to see the "Hello, World!" 
+message.
 
 "Hello World" Program in Server Console
-We can also print the "Hello World" program directly into the console terminal without embedding it into HTML. Create an index.js file and add the code to it.
+
+-->We can also print the "Hello World" program directly into the console terminal without embedding it into HTML. 
+::Create an index.js file and add the code to it.
 
 
 
@@ -27,42 +37,55 @@ We can also print the "Hello World" program directly into the console terminal w
 
 // This is a comment
 console.log("Hello, World!");
+
 Run it in your terminal with:
 
-node index.js
+::node index.js
 
 "Hello World" Program in Server Console
-We can also print the "Hello World" program directly into the console terminal without embedding it into HTML. Create an index.js file and add the code to it.
+
+We can also print the "Hello World" program directly into the console terminal without embedding it into HTML. 
+Create an index.js file and add the code to it.
 
 
 
 
 
 // This is a comment
-console.log("Hello, World!");
+
+::console.log("Hello, World!");
+
 Run it in your terminal with:
 
-node index.js
+::node index.js
 
-Features of JavaScript
+:: Features of JavaScript
+
 Here are some key features of JavaScript that make it a powerful language for web development:
 
 Client-Side Scripting: JavaScript runs on the user's browser, so it has a faster response time without needing to communicate with the server .
+
 Versatile: Can be used for a wide range of tasks, from simple calculations to complex server-side applications.
+
 Event-Driven: Responds to user actions (clicks, keystrokes) in real-time.
+
 Asynchronous: It can handle tasks like fetching data from servers without freezing the user interface.
+
 Rich Ecosystem: There are numerous libraries and frameworks built on JavaScript, such as React , Angular , and Vue.js, which make development faster and more efficient.
 
 
 JavaScript's flexibility extends to both the client-side and server-side, allowing developers to create complete web applications. Here’s how it functions in each environment:
 
 Client-Side: Involves controlling the browser and its DOM (Document Object Model). Handles user events like clicks and form inputs. Common libraries include AngularJS, ReactJS, and VueJS.
+
 Server-Side: Involves interacting with databases, manipulating files, and generating responses. Node.js and frameworks like Express.js are widely used for server-side JavaScript, enabling full-stack development.
 
-Programming Paradigms in JavaScript
+::Programming Paradigms in JavaScript
+
 JavaScript supports both imperative and declarative programming styles:
 
 Imperative Programming : Focuses on how to perform tasks by controlling the flow of computation. This includes approaches like procedural and object-oriented programming, often using constructs like async/await to handle asynchronous actions.
+
 Declarative Programming : Focuses on what should be done rather than how it’s done. It emphasizes describing the desired result, such as with arrow functions, without detailing the steps to achieve it.
 
 
@@ -78,27 +101,33 @@ js -> js engine -> parsing -> compilation ->  Execution -> Garbage collection ->
 This process involves several key stages
 
 Parsing: The engine first reads and interprets the raw JavaScript code. (around 15% of overall code)
+
 Compilation: It then converts the machine code into machine-readable instructions (roughly 25%).
+
 Execution: Finally, the compiled code is run (the core 50% of the process), leading to the desired actions in the browser or other environments. Additionally, the engine handles garbage collection to manage memory and utilizes an event loop for asynchronous operations, together accounting for the remaining 10% of the execution lifecycle.
+
 Note: The JavaScript Engine is a program that reads and executes JavaScript code.
 
 JavaScript in the Browser Development Mode
-Development-Mode
-Development Mode
+
+
 When building an application, "Development Mode" refers to working on your local machine before deployment. You write HTML, CSS, and JavaScript in an editor like VS Code. Using a Live Server extension (or manual refreshing), your browser fetches these files from a local server. Crucially, the browser's JavaScript Engine then reads, understands, and executes your JS code, making your webpage interactive and dynamic on your computer.
 
-Working of JavaScript Code in Production
-Production
-production
+Working of JavaScript Code in production
+
 In "Production Mode," your optimized HTML, CSS, and JavaScript files are deployed to a remote web server. When a user visits your site, their browser requests these files from the server. The server delivers them, and upon receiving the JavaScript files, the user's browser-based JavaScript Engine efficiently executes your code, providing a seamless and interactive user experience.
 
 Execution Context
+
 Everything in JavaScript is wrapped inside an execution context, which is an abstract concept (can be treated as a container) that holds all the information about the environment within which the current JavaScript code is being executed.
 
 Phases of the JavaScript Execution Context
 
+
 Memory Allocation Phase: In this phase, all the functions and variables of the JavaScript code get stored as a key-value pair inside the memory component of the execution context. In the case of a function, JavaScript copied the whole function into the memory block but in the case of variables, it assigned undefined as a placeholder.
+
 Code Execution Phase: In this phase, the JavaScript code is executed one line at a time inside the Code Component (also known as the Thread of Execution) of the Execution Context. 
+
 Let's see the whole process through an example.
 
 
@@ -110,6 +139,7 @@ let x = 2;
 let y = x*x;
 ​
 console.log(y);
+
 In the above JavaScript code, there are two variables named x and y. When we run this program, the Global Execution Context is created.
 
 
@@ -190,9 +220,13 @@ console.log(a);
 console.log(b);
 console.log(c);
 
+
 Declaring Variables in JavaScript
+
 Before ES6 (2015): Variables were declared only with var, which is function-scoped and global-scoped, causing issues like hoisting and global pollution.
+
 ES6 Introduction:let and const were introduced to provide safer alternatives for declaring variables.
+
 Scope: let and const are block-scoped (limited to { } block) or global-scoped, reducing errors compared to var.
 
 
@@ -217,6 +251,8 @@ console.log(a);
 console.log(b);
 
 
+
+
 2. let keyword
 let is a keyword in JavaScript used to declare variables and it is Block-scoped and not hoisted to the top, suitable for mutable variables
 
@@ -228,6 +264,9 @@ let a = 12
 let b = "gfg";
 console.log(a);
 console.log(b);
+
+
+
 
 3. const keyword
 const is a keyword in JavaScript used to declare variables and it is Block-scoped, immutable bindings that can't be reassigned, though objects can still be mutated.
@@ -242,11 +281,16 @@ console.log(a);
 console.log(b);
 
 Rules for Naming Variables
+
 When naming variables in JavaScript, follow these rules
 
+
 Variable names must begin with a letter, underscore (_), or dollar sign ($).
+
 Subsequent characters can be letters, numbers, underscores, or dollar signs.
+
 Variable names are case-sensitive (e.g., age and Age are different variables).
+
 Reserved keywords (like function, class, return, etc.) cannot be used as variable names.
 
 let userName = "Suman";  // Valid
@@ -291,6 +335,8 @@ if (true) {
 // Accessible outside the block
 // because we are in same function
 console.log(x);
+
+
 3. let and const are block scoped : Cannot be accessed outside block even if inside the same function
 
 
@@ -302,6 +348,7 @@ if (true) {
   const z = 30;
 }
 console.log(y, z); // ReferenceError
+
 
 
 4. var can be redeclared in the same scope, but let and const cannot be
@@ -318,6 +365,9 @@ let y = 40; // SyntaxError
 ​
 const z = 50;
 const z = 60; // SyntaxError
+
+
+
 
 5. We can change elements of array or objects even if declared as const.
 
@@ -336,7 +386,11 @@ console.log(arr)  // Allowed
 obj = { b: 30 }; 
 arr = [50, 100] */
 
+
+
 We can print a user's name in JavaScript using methods like alert(), console.log(), document.write(),document.getElementById(). Each method serves a specific purpose depending on the output scenario.
+
+
 
 1. Using alert( )
 This method is used when you want to show the output in the form of a pop-up. This is useful for creating a direct communication channel with users. It is also effective in providing immediate information or feedback.
@@ -385,6 +439,10 @@ This method is used when you want to output the information to the browser conso
 Prompt Input: The prompt() function is used to gather user input, displaying a dialog box where the user enters their name, which is stored in the userName variable.
 Console Output: The console.log() method outputs the message "Your name is: " along with the user's input to the browser's developer console, making it visible for debugging purposes.
 Non-Intrusive Logging: Unlike alert(), console.log() does not interrupt the user experience, making it a preferred choice for logging information during development.
+
+
+
+
 
 3. Using document.write( )
 This method is used when you want to directly write some content to the HTML document. This method is useful when you want to dynamically update the webpage's display without any additional manipulation.
